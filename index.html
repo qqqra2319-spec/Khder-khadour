@@ -1,1271 +1,1176 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8" /><meta name="google-site-verification" content="l43CXfHD8RoyDTaycvw6oseIBuDMjB0YuVVSnVmR2IE" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ملخص الأدوية الدراسي – CNS Pharmacology</title>
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=IBM+Plex+Mono:wght@400;600&display=swap');
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="Khder Khadour"/>
+  <meta name="description" content="متلازمة توريت – دليل شامل وموثوق بقلم خضر خضور"/>
+  <title>متلازمة توريت | Khder Khadour</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    /* ===== TOKENS ===== */
+    :root {
+      --ink:        #06060F;
+      --void:       #0A0A1A;
+      --deep:       #0F0F2E;
+      --pulse-1:    #5B4FFF;
+      --pulse-2:    #8F5BFF;
+      --pulse-3:    #C45BFF;
+      --ice:        #B8D4FF;
+      --snow:       #EEF2FF;
+      --mid:        #7A8AAD;
+      --border:     rgba(91,79,255,0.25);
+      --glow:       0 0 40px rgba(91,79,255,0.35);
+      --glow-sm:    0 0 14px rgba(143,91,255,0.4);
+    }
 
-:root {
-  --navy:#0D2137; --blue:#1A4A7A; --teal:#0A7E6E; --amber:#B85C00;
-  --red:#9B1C1C; --purple:#5B2D8E; --ink:#1A2332; --mist:#F0F4F8;
-  --white:#FFFFFF; --border:#C8D8E8; --shadow:rgba(13,33,55,0.12);
-  --ssri:#1A4A7A; --snri:#1A5276; --tca:#0A5C4A; --ht2:#5B2D8E;
-  --atyp:#7D4300; --agom:#1F618D; --maoi:#7B241C; --new:#0E7490;
-  --mood:#2D3561; --bzd:#1F4E79; --zdrug:#1B6CA8; --barb:#6B2737;
-  --orex:#3B1F5E; --other:#145A32;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:'Cairo',sans-serif;background:var(--mist);color:var(--ink);font-size:15px;line-height:1.75;overflow-x:hidden}
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-/* ── TOOLBAR ── */
-#toolbar{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(13,33,55,0.97);backdrop-filter:blur(12px);
-  display:flex;align-items:center;gap:8px;padding:10px 20px;border-bottom:1px solid rgba(255,255,255,.08);direction:rtl}
-.tb-logo{font-size:14px;font-weight:800;color:#fff;white-space:nowrap;margin-left:8px}
-.tb-logo span{color:#3AB8F0}
-#search-box{flex:1;max-width:340px;position:relative}
-#search-inp{width:100%;padding:8px 36px 8px 14px;border-radius:20px;border:1px solid rgba(255,255,255,.15);
-  background:rgba(255,255,255,.08);color:#fff;font-family:'Cairo',sans-serif;font-size:13px;outline:none;direction:rtl}
-#search-inp::placeholder{color:rgba(255,255,255,.35)}
-#search-inp:focus{border-color:#3AB8F0;background:rgba(255,255,255,.12)}
-.search-icon{position:absolute;right:12px;top:50%;transform:translateY(-50%);color:rgba(255,255,255,.4);font-size:14px;pointer-events:none}
-#search-results{position:absolute;top:calc(100% + 6px);right:0;left:0;background:#0D2137;border:1px solid #1A4A7A;
-  border-radius:10px;box-shadow:0 8px 32px rgba(0,0,0,.5);max-height:360px;overflow-y:auto;z-index:300;display:none}
-.sr-item{padding:10px 16px;cursor:pointer;border-bottom:1px solid rgba(255,255,255,.06);display:flex;flex-direction:column;gap:2px}
-.sr-item:last-child{border-bottom:none}
-.sr-item:hover{background:rgba(58,184,240,.12)}
-.sr-name{color:#fff;font-size:13px;font-weight:700}
-.sr-cat{color:#7ECBF0;font-size:11px}
-.sr-snippet{color:rgba(255,255,255,.5);font-size:11px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}
-.sr-highlight{background:#3AB8F0;color:#000;border-radius:2px;padding:0 2px}
+    html { scroll-behavior: smooth; }
 
-.tb-btns{display:flex;gap:6px;margin-right:auto}
-.tb-btn{padding:7px 13px;border-radius:20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.07);
-  color:rgba(255,255,255,.8);font-family:'Cairo',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:all .15s;white-space:nowrap}
-.tb-btn:hover,.tb-btn.active{background:#3AB8F0;color:#0D2137;border-color:#3AB8F0}
-.tb-btn.danger{border-color:rgba(255,100,100,.3)}
-.tb-btn.danger:hover{background:#C0392B;border-color:#C0392B;color:#fff}
+    body {
+      background: var(--void);
+      color: var(--snow);
+      font-family: 'Cairo', sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+      overflow-x: hidden;
+    }
 
-/* ── PROGRESS BAR ── */
-#progress{position:fixed;top:52px;left:0;right:0;height:3px;background:transparent;z-index:199}
-#progress-bar{height:3px;background:linear-gradient(90deg,#3AB8F0,#0A7E6E);width:0%;transition:width .1s}
+    /* ===== EEG CANVAS ===== */
+    #eeg-canvas {
+      position: fixed;
+      inset: 0;
+      z-index: 0;
+      opacity: 0.18;
+      pointer-events: none;
+    }
 
-/* ── LAYOUT ── */
-.layout{display:flex;min-height:100vh;padding-top:52px}
+    /* ===== NOISE OVERLAY ===== */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 1;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+      background-size: 180px;
+      opacity: 0.025;
+      pointer-events: none;
+    }
 
-/* ── SIDEBAR ── */
-nav{width:250px;flex-shrink:0;background:var(--navy);position:sticky;top:52px;height:calc(100vh - 52px);
-  overflow-y:auto;direction:rtl;scrollbar-width:thin;scrollbar-color:#2A5A8A var(--navy)}
-.nav-brand{padding:18px 18px 14px;border-bottom:1px solid #1A3A5A;margin-bottom:6px}
-.nav-brand h2{font-size:13px;font-weight:800;color:#fff;line-height:1.4}
-.nav-brand p{font-size:10px;color:#7090B0;margin-top:3px}
-.nav-stat{display:flex;gap:8px;margin-top:10px}
-.nav-stat-box{flex:1;background:rgba(255,255,255,.05);border-radius:6px;padding:6px 8px;text-align:center}
-.nav-stat-box .n{font-size:18px;font-weight:900;color:#3AB8F0}
-.nav-stat-box .l{font-size:9px;color:#7090B0}
-.nav-section-label{font-size:9px;font-weight:700;letter-spacing:.1em;color:#4A7A9A;padding:14px 18px 5px;text-transform:uppercase}
-nav a{display:flex;align-items:center;gap:7px;padding:8px 18px;color:#8AB0CC;text-decoration:none;font-size:12.5px;
-  font-weight:500;border-right:3px solid transparent;transition:all .12s;position:relative}
-nav a:hover,nav a.active{color:#fff;background:rgba(255,255,255,.06);border-right-color:#3AB8F0}
-nav a .dot{width:7px;height:7px;border-radius:50%;flex-shrink:0;background:currentColor;opacity:.5}
-nav a:hover .dot,nav a.active .dot{opacity:1}
-nav a .badge{margin-right:auto;background:rgba(58,184,240,.2);color:#3AB8F0;font-size:9px;padding:1px 5px;border-radius:8px}
+    /* ===== LAYOUT ===== */
+    .wrapper { position: relative; z-index: 2; }
 
-/* ── MAIN ── */
-main{flex:1;padding:0 36px 80px;max-width:1040px;min-width:0}
+    section { padding: 6rem 0; }
 
-/* ── COVER ── */
-.cover{background:linear-gradient(135deg,#0D2137 0%,#1A3A6A 50%,#0A5C4A 100%);
-  color:white;padding:56px 40px 48px;margin:0 -36px 40px;position:relative;overflow:hidden}
-.cover-particles{position:absolute;inset:0;overflow:hidden;pointer-events:none}
-.cover-particles span{position:absolute;width:2px;height:2px;background:#3AB8F0;border-radius:50%;animation:float linear infinite;opacity:.4}
-@keyframes float{0%{transform:translateY(100%);opacity:0}10%{opacity:.4}90%{opacity:.4}100%{transform:translateY(-100vh);opacity:0}}
-.cover-inner{position:relative;z-index:1}
-.cover-badge{display:inline-block;background:rgba(58,184,240,.15);border:1px solid rgba(58,184,240,.3);
-  color:#3AB8F0;font-size:11px;font-weight:700;padding:4px 12px;border-radius:20px;margin-bottom:16px;letter-spacing:.05em}
-.cover h1{font-size:38px;font-weight:900;line-height:1.2;margin-bottom:10px}
-.cover-en{font-family:'IBM Plex Mono',monospace;font-size:15px;color:#7ECBF0;margin-bottom:20px;letter-spacing:.03em}
-.cover-stats{display:flex;gap:24px;margin:20px 0;flex-wrap:wrap}
-.cover-stat{text-align:center}
-.cover-stat .big{font-size:32px;font-weight:900;color:#3AB8F0;line-height:1}
-.cover-stat .lbl{font-size:11px;color:rgba(255,255,255,.5);margin-top:2px}
-.cover-meta{font-size:12px;color:rgba(255,255,255,.5);border-top:1px solid rgba(255,255,255,.1);padding-top:14px;margin-top:4px}
-.cover-tools{display:flex;gap:8px;margin-top:16px;flex-wrap:wrap}
-.cover-tool-btn{padding:9px 18px;border-radius:8px;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.08);
-  color:#fff;font-family:'Cairo',sans-serif;font-size:13px;font-weight:600;cursor:pointer;transition:all .2s;display:flex;align-items:center;gap:6px}
-.cover-tool-btn:hover{background:rgba(58,184,240,.25);border-color:#3AB8F0;transform:translateY(-2px)}
-.cover-tool-btn.primary{background:#3AB8F0;color:#0D2137;border-color:#3AB8F0}
-.cover-tool-btn.primary:hover{background:#5ECEF7}
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
 
-/* ── SECTION TITLE ── */
-.section-title{font-size:22px;font-weight:900;color:var(--navy);margin:48px 0 20px;padding-bottom:10px;
-  border-bottom:3px solid var(--navy);display:flex;align-items:center;gap:10px}
-.section-title .num{background:var(--navy);color:white;font-size:12px;font-weight:700;padding:3px 9px;border-radius:4px;flex-shrink:0}
+    /* ===== NAV ===== */
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 1.1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(6,6,15,0.75);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid var(--border);
+    }
 
-/* ── DRUG CARD ── */
-.drug-card{background:var(--white);border-radius:12px;box-shadow:0 2px 16px var(--shadow);margin-bottom:28px;
-  overflow:hidden;border:1px solid var(--border);transition:box-shadow .2s,transform .2s}
-.drug-card:hover{box-shadow:0 6px 28px rgba(13,33,55,0.16);transform:translateY(-1px)}
-.drug-header{padding:18px 24px;color:white;display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;cursor:pointer;position:relative}
-.drug-header h3{font-size:18px;font-weight:800}
-.drug-header .drug-en{font-family:'IBM Plex Mono',monospace;font-size:12px;color:rgba(255,255,255,.7);letter-spacing:.02em}
-.drug-header .drug-list{width:100%;font-size:11.5px;color:rgba(255,255,255,.65);margin-top:3px;font-family:'IBM Plex Mono',monospace;letter-spacing:.015em}
-.drug-header .collapse-icon{margin-right:auto;font-size:18px;color:rgba(255,255,255,.5);transition:transform .25s;flex-shrink:0}
-.drug-card.collapsed .drug-body{display:none}
-.drug-card.collapsed .collapse-icon{transform:rotate(-90deg)}
+    .nav-brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--pulse-2);
+      text-shadow: var(--glow-sm);
+    }
 
-.drug-body{padding:22px 24px}
-.sub{margin-bottom:18px}
-.sub-title{font-size:11.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:#5A7A9A;
-  margin-bottom:8px;padding-bottom:4px;border-bottom:1.5px solid var(--border)}
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
 
-/* ── BULLETS ── */
-.bullets{list-style:none}
-.bullets li{padding:4px 0;display:flex;gap:9px;font-size:13.5px;line-height:1.6}
-.bullets li::before{content:'◆';color:var(--blue);font-size:7px;margin-top:8px;flex-shrink:0}
+    .nav-links a {
+      color: var(--mid);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 600;
+      transition: color .25s;
+    }
 
-/* ── PILL ── */
-.pill{display:inline-block;background:#E8F4FD;color:#1A4A7A;font-family:'IBM Plex Mono',monospace;
-  font-size:11px;font-weight:600;padding:1px 6px;border-radius:3px;border:1px solid #B8D8F0;white-space:nowrap}
+    .nav-links a:hover { color: var(--ice); }
 
-/* ── TAG ── */
-.tag{display:inline-block;font-size:11px;font-weight:700;padding:2px 7px;border-radius:3px;margin:1px 2px}
-.tag-blue{background:#DBEAFE;color:#1E40AF}
-.tag-green{background:#D1FAE5;color:#065F46}
-.tag-red{background:#FEE2E2;color:#991B1B}
-.tag-amber{background:#FEF3C7;color:#92400E}
-.tag-purple{background:#EDE9FE;color:#5B21B6}
+    /* ===== HERO ===== */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding-top: 6rem;
+      position: relative;
+      overflow: hidden;
+    }
 
-/* ── NOTICES ── */
-.notice{border-radius:7px;padding:9px 13px;font-size:13px;margin:8px 0;display:flex;gap:9px;align-items:flex-start}
-.notice-icon{flex-shrink:0;font-size:15px;margin-top:1px}
-.notice-warn{background:#FFFBEB;border:1px solid #F59E0B;color:#78350F}
-.notice-danger{background:#FFF1F2;border:1px solid #F87171;color:#7F1D1D;font-weight:600}
-.notice-info{background:#EFF6FF;border:1px solid #93C5FD;color:#1E3A5F}
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 5rem;
+      align-items: center;
+    }
 
-/* ── INFO GRID ── */
-.info-grid{display:grid;grid-template-columns:1fr 2fr;gap:1px;background:var(--border);
-  border:1px solid var(--border);border-radius:7px;overflow:hidden;font-size:13px}
-.ig-label{background:#F0F6FB;padding:8px 12px;font-weight:600;color:var(--blue)}
-.ig-value{background:var(--white);padding:8px 12px;color:var(--ink)}
-.ig-label:nth-child(4n+3),.ig-value:nth-child(4n+4){background:#F8FBFE}
+    .hero-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--pulse-2);
+      margin-bottom: 1.4rem;
+    }
 
-/* ── COMPARISON TABLE ── */
-.comp-table{width:100%;border-collapse:collapse;font-size:12.5px;border:1px solid var(--border);border-radius:8px;overflow:hidden}
-.comp-table th{background:var(--navy);color:white;padding:9px 12px;font-weight:700;font-size:12px;text-align:right}
-.comp-table td{padding:8px 12px;border-bottom:1px solid var(--border);vertical-align:top;text-align:right}
-.comp-table tr:nth-child(even) td{background:#F5F9FD}
-.comp-table tr:last-child td{border-bottom:none}
-.comp-table tr:hover td{background:#E8F3FC;transition:background .1s}
-.comp-table .en-cell{font-family:'IBM Plex Mono',monospace;font-size:11.5px;color:#2C5F8A;font-weight:600}
+    .eyebrow-dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: var(--pulse-2);
+      animation: blink 2.2s ease-in-out infinite;
+    }
 
-/* ── DRUG SUBNAME ── */
-.drug-subname{font-size:15px;font-weight:800;color:var(--ink);margin:18px 0 10px;padding-right:10px;border-right:4px solid}
-hr.divider{border:none;border-top:1px solid var(--border);margin:18px 0}
+    @keyframes blink {
+      0%,100%{opacity:1;transform:scale(1);}
+      50%{opacity:0.3;transform:scale(0.5);}
+    }
 
-/* color headers */
-.h-ssri{background:var(--ssri)}.h-snri{background:var(--snri)}.h-tca{background:var(--tca)}
-.h-ht2{background:var(--ht2)}.h-atyp{background:var(--atyp)}.h-agom{background:var(--agom)}
-.h-maoi{background:var(--maoi)}.h-new{background:var(--new)}.h-mood{background:var(--mood)}
-.h-bzd{background:var(--bzd)}.h-zdrug{background:var(--zdrug)}.h-barb{background:var(--barb)}
-.h-orex{background:var(--orex)}.h-other{background:var(--other)}
-.b-ssri{border-color:var(--ssri)}.b-snri{border-color:var(--snri)}.b-tca{border-color:var(--tca)}
-.b-ht2{border-color:var(--ht2)}.b-atyp{border-color:var(--atyp)}.b-agom{border-color:var(--agom)}
-.b-maoi{border-color:var(--maoi)}.b-new{border-color:var(--new)}.b-mood{border-color:var(--mood)}
-.b-bzd{border-color:var(--bzd)}.b-zdrug{border-color:var(--zdrug)}.b-barb{border-color:var(--barb)}
-.b-orex{border-color:var(--orex)}.b-other{border-color:var(--other)}
+    h1 {
+      font-size: clamp(2.8rem, 5vw, 4.2rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 1.2rem;
+    }
 
-/* ── SUMMARY CARD ── */
-.summary-card{background:var(--white);border-radius:12px;border:1px solid var(--border);
-  box-shadow:0 2px 12px var(--shadow);padding:22px 24px;margin-bottom:28px}
-.summary-title{font-size:16px;font-weight:800;color:var(--navy);margin-bottom:14px;display:flex;align-items:center;gap:8px}
-.summary-title::before{content:'';display:inline-block;width:4px;height:18px;background:var(--blue);border-radius:2px}
+    .gradient-text {
+      background: linear-gradient(135deg, var(--pulse-1), var(--pulse-2), var(--pulse-3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
 
-/* ── MODAL OVERLAY ── */
-.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.7);backdrop-filter:blur(6px);
-  z-index:500;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .2s}
-.modal-overlay.open{opacity:1;pointer-events:all}
-.modal{background:#fff;border-radius:16px;width:100%;max-width:720px;max-height:88vh;overflow:hidden;
-  display:flex;flex-direction:column;box-shadow:0 24px 80px rgba(0,0,0,.4);transform:translateY(20px);transition:transform .2s}
-.modal-overlay.open .modal{transform:translateY(0)}
-.modal-header{background:var(--navy);color:white;padding:18px 24px;display:flex;align-items:center;gap:12px;direction:rtl;flex-shrink:0}
-.modal-header h2{font-size:17px;font-weight:800;flex:1}
-.modal-close{background:rgba(255,255,255,.1);border:none;color:white;width:30px;height:30px;border-radius:50%;
-  cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center;transition:background .15s}
-.modal-close:hover{background:rgba(255,255,255,.2)}
-.modal-body{padding:24px;overflow-y:auto;direction:rtl;flex:1}
+    .hero-desc {
+      color: var(--mid);
+      font-size: 1.08rem;
+      max-width: 500px;
+      margin-bottom: 2.4rem;
+    }
 
-/* ── FLASHCARDS ── */
-#fc-container{display:flex;flex-direction:column;align-items:center;gap:20px}
-.fc-progress-bar{width:100%;height:6px;background:#E5E7EB;border-radius:3px;overflow:hidden}
-.fc-progress-fill{height:6px;background:linear-gradient(90deg,#3AB8F0,#0A7E6E);border-radius:3px;transition:width .4s}
-.fc-counter{font-size:13px;color:#6B7280;text-align:center}
-.fc-card{width:100%;max-width:560px;height:240px;perspective:1000px;cursor:pointer}
-.fc-inner{width:100%;height:100%;position:relative;transform-style:preserve-3d;transition:transform .55s cubic-bezier(.4,0,.2,1)}
-.fc-card.flipped .fc-inner{transform:rotateY(180deg)}
-.fc-front,.fc-back{position:absolute;inset:0;border-radius:14px;display:flex;flex-direction:column;
-  align-items:center;justify-content:center;padding:24px;backface-visibility:hidden;text-align:center;gap:8px}
-.fc-front{background:linear-gradient(135deg,var(--navy),#1A4A7A);color:white;border:2px solid rgba(58,184,240,.3)}
-.fc-back{background:linear-gradient(135deg,#0A5C4A,#0A7E6E);color:white;transform:rotateY(180deg);border:2px solid rgba(10,126,110,.5)}
-.fc-label{font-size:11px;font-weight:700;letter-spacing:.1em;opacity:.6;text-transform:uppercase}
-.fc-question{font-size:19px;font-weight:800;line-height:1.4}
-.fc-answer{font-size:15px;font-weight:600;line-height:1.5;opacity:.95}
-.fc-hint{font-size:11px;opacity:.5;margin-top:8px}
-.fc-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.fc-btn{padding:9px 20px;border-radius:8px;border:none;font-family:'Cairo',sans-serif;font-size:13px;
-  font-weight:700;cursor:pointer;transition:all .15s}
-.fc-btn-wrong{background:#FEE2E2;color:#991B1B}
-.fc-btn-wrong:hover{background:#FECACA}
-.fc-btn-right{background:#D1FAE5;color:#065F46}
-.fc-btn-right:hover{background:#A7F3D0}
-.fc-btn-next{background:var(--navy);color:white}
-.fc-btn-next:hover{background:var(--blue)}
-.fc-score{text-align:center;padding:20px;background:#F0F9FF;border-radius:12px;border:2px solid #BAE6FD}
-.fc-score .big-score{font-size:48px;font-weight:900;color:#0E7490;line-height:1}
-.fc-score p{color:#555;margin-top:8px}
-.fc-score-stars{font-size:28px;letter-spacing:4px;margin:8px 0}
+    .btn-group { display: flex; gap: 1rem; flex-wrap: wrap; }
 
-/* ── QUIZ ── */
-#quiz-container{display:flex;flex-direction:column;gap:18px}
-.quiz-progress{font-size:12px;color:#6B7280;text-align:center}
-.quiz-q{font-size:15px;font-weight:700;color:var(--navy);line-height:1.5;margin-bottom:14px}
-.quiz-options{display:flex;flex-direction:column;gap:8px}
-.quiz-opt{padding:11px 16px;border-radius:8px;border:2px solid var(--border);background:#fff;
-  font-family:'Cairo',sans-serif;font-size:13.5px;font-weight:600;cursor:pointer;text-align:right;
-  transition:all .15s;direction:rtl}
-.quiz-opt:hover:not(:disabled){border-color:#3AB8F0;background:#EFF6FF}
-.quiz-opt.correct{border-color:#059669;background:#D1FAE5;color:#065F46}
-.quiz-opt.wrong{border-color:#DC2626;background:#FEE2E2;color:#991B1B}
-.quiz-opt:disabled{cursor:default}
-.quiz-explain{background:#FFFBEB;border:1px solid #F59E0B;border-radius:8px;padding:12px 16px;
-  font-size:13px;color:#78350F;margin-top:8px;direction:rtl;display:none}
-.quiz-explain.show{display:block}
-.quiz-nav{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-top:10px}
-.quiz-nav-btn{padding:9px 18px;border-radius:8px;border:none;font-family:'Cairo',sans-serif;
-  font-size:13px;font-weight:700;cursor:pointer;transition:background .15s}
-.quiz-nav-btn.primary{background:var(--blue);color:white}
-.quiz-nav-btn.primary:hover{background:var(--navy)}
-.quiz-result{text-align:center;padding:24px}
-.quiz-result .big{font-size:52px;font-weight:900;color:var(--teal);line-height:1}
-.quiz-result .grade{font-size:18px;font-weight:800;margin:8px 0}
-.quiz-result p{color:#666;font-size:14px}
-.quiz-result .retry-btn{margin-top:16px;padding:10px 24px;background:var(--navy);color:white;border:none;
-  border-radius:8px;font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;cursor:pointer}
-.quiz-result .retry-btn:hover{background:var(--blue)}
+    .btn {
+      display: inline-block;
+      padding: 0.82rem 2rem;
+      border-radius: 4px;
+      font-family: 'Cairo', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-decoration: none;
+      transition: all .25s;
+      cursor: pointer;
+      border: none;
+    }
 
-/* ── DRUG CHECKER ── */
-.checker-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px}
-.checker-select{padding:10px 14px;border-radius:8px;border:2px solid var(--border);background:#fff;
-  font-family:'Cairo',sans-serif;font-size:13px;color:var(--ink);direction:rtl;outline:none;width:100%}
-.checker-select:focus{border-color:#3AB8F0}
-.checker-btn{width:100%;padding:11px;background:var(--navy);color:white;border:none;border-radius:8px;
-  font-family:'Cairo',sans-serif;font-size:14px;font-weight:700;cursor:pointer;transition:background .15s}
-.checker-btn:hover{background:var(--blue)}
-.interaction-result{border-radius:10px;padding:14px 18px;margin-top:12px;display:none;direction:rtl;border:2px solid}
-.interaction-result.safe{background:#D1FAE5;border-color:#059669;color:#065F46}
-.interaction-result.warning{background:#FEF3C7;border-color:#D97706;color:#78350F}
-.interaction-result.danger{background:#FEE2E2;border-color:#DC2626;color:#7F1D1D}
-.ir-icon{font-size:28px;text-align:center;margin-bottom:8px}
-.ir-title{font-size:16px;font-weight:800;text-align:center;margin-bottom:6px}
-.ir-text{font-size:13px;line-height:1.6}
+    .btn-primary {
+      background: linear-gradient(135deg, var(--pulse-1), var(--pulse-2));
+      color: #fff;
+      box-shadow: var(--glow);
+    }
 
-/* ── DARK MODE ── */
-body.dark{background:#0A1628;color:#C8D8E8}
-body.dark .drug-card,body.dark .summary-card{background:#0F1E30;border-color:#1A3A5A}
-body.dark .comp-table td{background:#0F1E30;border-color:#1A3A5A}
-body.dark .comp-table tr:nth-child(even) td{background:#0D1928}
-body.dark .info-grid .ig-label{background:#0F2A40;color:#7ECBF0}
-body.dark .info-grid .ig-value{background:#0F1E30}
-body.dark .ig-label:nth-child(4n+3){background:#0D2237}
-body.dark .ig-value:nth-child(4n+4){background:#0D1928}
-body.dark .section-title{color:#7ECBF0;border-color:#1A4A7A}
-body.dark .summary-card,.modal{--border:#1A3A5A}
-body.dark .pill{background:#0F2A40;color:#7ECBF0;border-color:#1A4A7A}
-body.dark .sub-title{color:#5A8AAA;border-color:#1A3A5A}
-body.dark .notice-info{background:#0D2440;border-color:#1A4A7A;color:#7ECBF0}
-body.dark .notice-warn{background:#2D1F00;border-color:#B45309;color:#FCD34D}
-body.dark .notice-danger{background:#2D0808;border-color:#B91C1C;color:#FCA5A5}
-body.dark .mist{background:#0A1628}
-body.dark .drug-subname{color:#C8D8E8}
-body.dark .modal{background:#0F1E30}
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 60px rgba(91,79,255,0.5);
+    }
 
-/* ── SCROLL TOP ── */
-#top-btn{position:fixed;bottom:24px;left:24px;background:var(--navy);color:white;border:1px solid #1A4A7A;
-  border-radius:50%;width:42px;height:42px;font-size:18px;cursor:pointer;box-shadow:0 4px 16px rgba(0,0,0,.3);
-  display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity .2s;z-index:99}
-#top-btn.show{opacity:1}
-#top-btn:hover{background:var(--blue)}
+    .btn-ghost {
+      background: transparent;
+      color: var(--ice);
+      border: 1px solid var(--border);
+    }
 
-/* ── FILTER CHIPS ── */
-.filter-bar{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:20px;padding:12px 16px;background:#fff;
-  border-radius:10px;border:1px solid var(--border);box-shadow:0 1px 6px var(--shadow)}
-.filter-chip{padding:5px 12px;border-radius:20px;border:1.5px solid var(--border);background:#fff;
-  font-family:'Cairo',sans-serif;font-size:11.5px;font-weight:600;cursor:pointer;color:#4A6A8A;transition:all .15s;white-space:nowrap}
-.filter-chip:hover,.filter-chip.active{background:var(--navy);color:white;border-color:var(--navy)}
-.filter-chip.active-ssri{background:var(--ssri);border-color:var(--ssri);color:white}
-.filter-chip.active-snri{background:var(--snri);border-color:var(--snri);color:white}
-.filter-chip.active-tca{background:var(--tca);border-color:var(--tca);color:white}
+    .btn-ghost:hover {
+      background: rgba(91,79,255,0.1);
+      border-color: var(--pulse-2);
+    }
 
-/* drug-card hidden by filter */
-.drug-card.filtered-out{display:none}
+    /* ===== BRAIN VISUAL ===== */
+    .brain-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
-@media(max-width:800px){
-  nav{display:none}
-  main{padding:0 14px 60px}
-  .cover{margin:0 -14px 28px;padding:40px 18px}
-  .cover h1{font-size:26px}
-  .cover-stats{gap:14px}
-  .info-grid{grid-template-columns:1fr}
-  .checker-grid{grid-template-columns:1fr}
-  #toolbar{padding:8px 12px;gap:6px}
-  .tb-logo{font-size:12px}
-  .tb-btn{font-size:11px;padding:6px 10px}
-}
-</style>
+    .brain-ring {
+      position: absolute;
+      border-radius: 50%;
+      border: 1px solid;
+      animation: orbit 8s linear infinite;
+    }
+
+    .brain-ring:nth-child(1) {
+      width: 340px; height: 340px;
+      border-color: rgba(91,79,255,0.2);
+      animation-duration: 14s;
+    }
+    .brain-ring:nth-child(2) {
+      width: 270px; height: 270px;
+      border-color: rgba(143,91,255,0.25);
+      animation-duration: 10s;
+      animation-direction: reverse;
+    }
+    .brain-ring:nth-child(3) {
+      width: 200px; height: 200px;
+      border-color: rgba(196,91,255,0.3);
+      animation-duration: 7s;
+    }
+
+    @keyframes orbit {
+      from{transform:rotate(0deg);}
+      to{transform:rotate(360deg);}
+    }
+
+    .brain-svg {
+      width: 220px;
+      position: relative;
+      z-index: 2;
+      filter: drop-shadow(0 0 30px rgba(143,91,255,0.6));
+      animation: float 6s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-14px);}
+    }
+
+    .synapse {
+      position: absolute;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--pulse-2);
+      box-shadow: 0 0 12px var(--pulse-2);
+    }
+
+    .synapse:nth-child(4)  { top:20%; left:15%; animation: spark 3.1s ease-in-out infinite; }
+    .synapse:nth-child(5)  { top:60%; right:10%; animation: spark 2.4s ease-in-out infinite 0.7s; }
+    .synapse:nth-child(6)  { bottom:18%; left:30%; animation: spark 4s ease-in-out infinite 1.3s; }
+    .synapse:nth-child(7)  { top:30%; right:22%; animation: spark 2.8s ease-in-out infinite 0.3s; }
+
+    @keyframes spark {
+      0%,100%{opacity:0.2;transform:scale(1);}
+      50%{opacity:1;transform:scale(2);}
+    }
+
+    /* ===== STATS ===== */
+    #stats {
+      background: linear-gradient(135deg, rgba(91,79,255,0.07), rgba(196,91,255,0.07));
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 3.5rem 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .stat-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--pulse-1), var(--pulse-3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: block;
+    }
+
+    .stat-label {
+      color: var(--mid);
+      font-size: 0.87rem;
+      font-weight: 600;
+    }
+
+    /* ===== SECTION TITLES ===== */
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--pulse-2);
+      margin-bottom: 1rem;
+    }
+
+    h2 {
+      font-size: clamp(1.9rem, 3.5vw, 2.7rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .lead {
+      color: var(--mid);
+      font-size: 1.05rem;
+      max-width: 640px;
+      margin-bottom: 3rem;
+    }
+
+    /* ===== WHAT IS ===== */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 4rem;
+      align-items: start;
+    }
+
+    .info-block {
+      background: rgba(255,255,255,0.025);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 2rem;
+      transition: border-color .3s, box-shadow .3s;
+    }
+
+    .info-block:hover {
+      border-color: rgba(143,91,255,0.45);
+      box-shadow: var(--glow-sm);
+    }
+
+    .info-block p {
+      color: rgba(238,242,255,0.8);
+      line-height: 1.9;
+    }
+
+    /* ===== TYPES GRID ===== */
+    .types-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .type-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.8rem;
+      position: relative;
+      overflow: hidden;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .type-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, var(--pulse-1), var(--pulse-3));
+    }
+
+    .type-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--glow);
+    }
+
+    .type-icon {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
+      display: block;
+    }
+
+    .type-card h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 0.6rem;
+      color: var(--ice);
+    }
+
+    .type-card p {
+      font-size: 0.9rem;
+      color: var(--mid);
+      line-height: 1.7;
+    }
+
+    /* ===== SYMPTOMS ===== */
+    #symptoms { background: rgba(15,15,46,0.6); }
+
+    .symptom-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 2.5rem;
+    }
+
+    .symptom-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 1.2rem 1.5rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      transition: background .25s;
+    }
+
+    .symptom-item:hover { background: rgba(91,79,255,0.08); }
+
+    .symptom-icon {
+      min-width: 36px; height: 36px;
+      border-radius: 8px;
+      background: linear-gradient(135deg, var(--pulse-1), var(--pulse-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+    }
+
+    .symptom-text strong {
+      display: block;
+      font-size: 0.95rem;
+      color: var(--ice);
+      margin-bottom: 0.2rem;
+    }
+
+    .symptom-text span {
+      font-size: 0.85rem;
+      color: var(--mid);
+    }
+
+    /* ===== MYTHS ===== */
+    .myth-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .myth-card {
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .myth-false {
+      background: rgba(255,60,60,0.08);
+      border: 1px solid rgba(255,60,60,0.2);
+      padding: 1.5rem;
+    }
+
+    .myth-true {
+      background: rgba(91,79,255,0.1);
+      border: 1px solid rgba(91,79,255,0.3);
+      padding: 1.5rem;
+    }
+
+    .myth-badge {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 800;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      padding: 0.25rem 0.7rem;
+      border-radius: 4px;
+      margin-bottom: 0.8rem;
+    }
+
+    .badge-false { background: rgba(255,60,60,0.2); color: #ff6b6b; }
+    .badge-true  { background: rgba(91,79,255,0.2); color: var(--pulse-2); }
+
+    .myth-card p { font-size: 0.95rem; color: rgba(238,242,255,0.85); line-height: 1.75; }
+
+    /* ===== TREATMENT ===== */
+    .treatment-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 2.5rem;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 1.5rem;
+      align-items: start;
+      padding: 1.5rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: transform .25s, border-color .25s;
+    }
+
+    .step:hover {
+      transform: translateX(6px);
+      border-color: rgba(143,91,255,0.4);
+    }
+
+    .step-num {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--pulse-2);
+      opacity: 0.4;
+      line-height: 1;
+      min-width: 52px;
+    }
+
+    .step h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ice);
+      margin-bottom: 0.35rem;
+    }
+
+    .step p { font-size: 0.9rem; color: var(--mid); }
+
+    /* ===== FAMOUS ===== */
+    #famous { background: rgba(10,10,26,0.8); }
+
+    .famous-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .famous-card {
+      text-align: center;
+      padding: 2rem 1.5rem;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      transition: transform .3s, box-shadow .3s;
+    }
+
+    .famous-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--glow);
+    }
+
+    .famous-avatar {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--pulse-1), var(--pulse-3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1rem;
+      border: 2px solid var(--border);
+    }
+
+    .famous-card h3 {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--ice);
+      margin-bottom: 0.3rem;
+    }
+
+    .famous-card .role {
+      font-size: 0.8rem;
+      color: var(--pulse-2);
+      font-weight: 600;
+      margin-bottom: 0.6rem;
+    }
+
+    .famous-card p { font-size: 0.85rem; color: var(--mid); }
+
+    /* ===== QUOTE ===== */
+    #quote-section {
+      padding: 5rem 0;
+      text-align: center;
+    }
+
+    .big-quote {
+      font-size: clamp(1.5rem, 3vw, 2.2rem);
+      font-weight: 700;
+      line-height: 1.5;
+      max-width: 800px;
+      margin: 0 auto 1.5rem;
+      color: var(--snow);
+    }
+
+    .big-quote em {
+      font-style: normal;
+      background: linear-gradient(135deg, var(--pulse-2), var(--pulse-3));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .quote-source {
+      color: var(--mid);
+      font-size: 0.9rem;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 3rem 0;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--pulse-2);
+      text-shadow: var(--glow-sm);
+      margin-bottom: 0.8rem;
+    }
+
+    footer p {
+      color: var(--mid);
+      font-size: 0.87rem;
+    }
+
+    footer a {
+      color: var(--pulse-2);
+      text-decoration: none;
+    }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero-grid, .two-col { grid-template-columns: 1fr; }
+      .brain-container { display: none; }
+      .stats-grid { grid-template-columns: repeat(2, 1fr); }
+      .types-grid, .famous-grid { grid-template-columns: 1fr 1fr; }
+      .symptom-list, .myth-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 560px) {
+      .stats-grid, .types-grid, .famous-grid { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+
+    /* ===== ACCESSIBILITY ===== */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+  </style>
 </head>
 <body>
 
-<!-- ── TOOLBAR ── -->
-<div id="toolbar">
-  <span class="tb-logo">💊 <span>CNS</span> Pharma</span>
-  <div id="search-box">
-    <span class="search-icon">🔍</span>
-    <input id="search-inp" type="text" placeholder="ابحث عن دواء أو مفهوم...">
-    <div id="search-results"></div>
-  </div>
-  <div class="tb-btns">
-    <button class="tb-btn" onclick="openFlashcards()">🃏 بطاقات</button>
-    <button class="tb-btn" onclick="openQuiz()">📝 اختبار</button>
-    <button class="tb-btn" onclick="openChecker()">⚡ تداخلات</button>
-    <button class="tb-btn" id="dark-btn" onclick="toggleDark()">🌙 ليلي</button>
-    <button class="tb-btn" onclick="collapseAll()">📐 طي الكل</button>
-  </div>
-</div>
+<!-- EEG Background -->
+<canvas id="eeg-canvas"></canvas>
 
-<div id="progress"><div id="progress-bar"></div></div>
+<div class="wrapper">
 
-<div class="layout">
-<!-- ── SIDEBAR ── -->
-<nav id="sidebar">
-  <div class="nav-brand">
-    <h2>ملخص الأدوية الدراسي</h2>
-    <p>CNS Pharmacology</p>
-    <div class="nav-stat">
-      <div class="nav-stat-box"><div class="n">38+</div><div class="l">دواء</div></div>
-      <div class="nav-stat-box"><div class="n">14</div><div class="l">صنف</div></div>
-      <div class="nav-stat-box"><div class="n" id="quiz-score-nav">—</div><div class="l">نتيجتك</div></div>
-    </div>
-  </div>
-  <div class="nav-section-label">مضادات الاكتئاب</div>
-  <a href="#ssri"><span class="dot" style="background:#3A9FD8"></span>SSRIs <span class="badge">6</span></a>
-  <a href="#snri"><span class="dot" style="background:#5AB8C8"></span>SNRIs <span class="badge">5</span></a>
-  <a href="#tca"><span class="dot" style="background:#2DC878"></span>TCAs <span class="badge">8</span></a>
-  <a href="#ht2"><span class="dot" style="background:#A060E0"></span>5-HT2 Antagonists</a>
-  <a href="#atyp"><span class="dot" style="background:#F0A040"></span>لانمطية</a>
-  <a href="#agom"><span class="dot" style="background:#40B8E8"></span>شادات الميلاتونين</a>
-  <a href="#maoi"><span class="dot" style="background:#E06060"></span>MAOIs</a>
-  <a href="#new"><span class="dot" style="background:#20C8B0"></span>الجديدة</a>
-  <div class="nav-section-label">تثبيت المزاج</div>
-  <a href="#mood"><span class="dot" style="background:#6080D0"></span>الليثيوم وأدوية أخرى</a>
-  <div class="nav-section-label">القلق والمنومات</div>
-  <a href="#bzd"><span class="dot" style="background:#4090D0"></span>البنزوديازيبينات <span class="badge">15</span></a>
-  <a href="#zdrug"><span class="dot" style="background:#50A8E0"></span>Z-Drugs</a>
-  <a href="#mel"><span class="dot" style="background:#60C0E8"></span>شادات الميلاتونين</a>
-  <a href="#barb"><span class="dot" style="background:#C07080"></span>الباربيتورات</a>
-  <a href="#orex"><span class="dot" style="background:#9060C0"></span>حاصرات الأوركسين</a>
-  <a href="#other"><span class="dot" style="background:#50A870"></span>أخرى</a>
-  <div class="nav-section-label">ملخص سريع</div>
-  <a href="#sum1"><span class="dot"></span>جدول مضادات الاكتئاب</a>
-  <a href="#sum2"><span class="dot"></span>جدول القلق والمنومات</a>
-  <a href="#sum3"><span class="dot"></span>ملخص CYP</a>
-</nav>
+  <!-- NAV -->
+  <nav>
+    <span class="nav-brand">Khder Khadour</span>
+    <ul class="nav-links">
+      <li><a href="#about">ما هي؟</a></li>
+      <li><a href="#symptoms">الأعراض</a></li>
+      <li><a href="#myths">الحقائق</a></li>
+      <li><a href="#treatment">العلاج</a></li>
+      <li><a href="#famous">شخصيات</a></li>
+    </ul>
+  </nav>
 
-<!-- ── MAIN ── -->
-<main>
-
-<!-- COVER -->
-<div class="cover">
-  <div class="cover-particles" id="particles"></div>
-  <div class="cover-inner">
-    <div class="cover-badge">📚 فارماكولوجيا المحاضرة السادسة</div>
-    <h1>ملخص الأدوية الدراسي</h1>
-    <div class="cover-en">CNS Pharmacology – Drug Summary</div>
-    <div class="cover-stats">
-      <div class="cover-stat"><div class="big">38+</div><div class="lbl">دواء</div></div>
-      <div class="cover-stat"><div class="big">14</div><div class="lbl">صنف دوائي</div></div>
-      <div class="cover-stat"><div class="big">3</div><div class="lbl">أقسام رئيسية</div></div>
-      <div class="cover-stat"><div class="big">25</div><div class="lbl">سؤال اختبار</div></div>
-    </div>
-    <div class="cover-meta">د. سليمان دوبا | قسم الأدوية والسموم | جامعة المنارة | 2025</div>
-    <div class="cover-tools">
-      <button class="cover-tool-btn primary" onclick="openFlashcards()">🃏 بدء المراجعة بالبطاقات</button>
-      <button class="cover-tool-btn" onclick="openQuiz()">📝 اختبر معلوماتك</button>
-      <button class="cover-tool-btn" onclick="openChecker()">⚡ فاحص التداخلات الدوائية</button>
-    </div>
-  </div>
-</div>
-
-<!-- FILTER BAR -->
-<div class="filter-bar">
-  <strong style="font-size:12px;color:#4A6A8A;align-self:center">فلتر:</strong>
-  <button class="filter-chip active" data-filter="all" onclick="filterCards('all',this)">الكل</button>
-  <button class="filter-chip" data-filter="antidep" onclick="filterCards('antidep',this)">مضادات الاكتئاب</button>
-  <button class="filter-chip" data-filter="mood" onclick="filterCards('mood',this)">تثبيت المزاج</button>
-  <button class="filter-chip" data-filter="anxio" onclick="filterCards('anxio',this)">القلق والمنومات</button>
-  <button class="filter-chip" data-filter="gaba" onclick="filterCards('gaba',this)">شادات GABA</button>
-  <button class="filter-chip" data-filter="serotonin" onclick="filterCards('serotonin',this)">سيروتونين</button>
-  <button class="filter-chip" data-filter="danger" onclick="filterCards('danger',this)">⚠ تحذيرات عالية</button>
-</div>
-
-<!-- ═══════════ SECTION 1: ANTIDEPRESSANTS ═══════════ -->
-<div class="section-title"><span class="num">١</span>الأدوية المضادة للاكتئاب — Antidepressants</div>
-
-<!-- SSRIs -->
-<div class="drug-card" id="ssri" data-tags="antidep serotonin">
-  <div class="drug-header h-ssri" onclick="toggleCard(this)">
-    <h3>مثبطات إعادة قبط السيروتونين الانتقائية</h3>
-    <span class="drug-en">SSRIs</span>
-    <div class="drug-list">Fluoxetine • Sertraline • Citalopram • Paroxetine • Fluvoxamine • Escitalopram</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="sub"><div class="sub-title">آلية العمل</div>
-      <ul class="bullets">
-        <li>تثبط ناقل <span class="pill">SERT</span> بشكل انتقائي (300–3000× مقارنة بنواقل الأدرينالين) ← تزيد السيروتونين في الفالق المشبكي</li>
-        <li>لا تؤثر على AchM، ألفا، H1 ← تأثيرات جانبية أقل من TCAs</li>
-      </ul>
-    </div>
-    <div class="sub"><div class="sub-title">الاستخدامات</div>
-      <div class="info-grid">
-        <div class="ig-label">خط أول</div><div class="ig-value">الاكتئاب، القلق المعمم (GAD)</div>
-        <div class="ig-label">OCD</div><div class="ig-value">الوسواس القهري – خاصة <span class="pill">Fluvoxamine</span></div>
-        <div class="ig-label">PTSD / هلع</div><div class="ig-value">اضطرابات ما بعد الصدمة والهلع</div>
-        <div class="ig-label">PMDD</div><div class="ig-value">قلق ما قبل الدورة – <span class="pill">Sertraline</span> و<span class="pill">Fluoxetine</span></div>
-        <div class="ig-label">بوليميا</div><div class="ig-value">النهام العصبي – <span class="pill">Fluoxetine</span> تحديداً</div>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="hero-eyebrow">
+            <span class="eyebrow-dot"></span>
+            توعية عصبية — Neurological Awareness
+          </div>
+          <h1>
+            متلازمة<br/>
+            <span class="gradient-text">توريت</span>
+          </h1>
+          <p class="hero-desc">
+            ليست نكتة، وليست مزحة. هي اضطراب عصبي حقيقي يستحق أن نفهمه،
+            نتقبّله، ونتعامل معه بعلم وإنسانية.
+          </p>
+          <div class="btn-group">
+            <a href="#about" class="btn btn-primary">اكتشف المزيد</a>
+            <a href="#treatment" class="btn btn-ghost">خيارات العلاج</a>
+          </div>
+        </div>
+        <div class="brain-container">
+          <div class="brain-ring"></div>
+          <div class="brain-ring"></div>
+          <div class="brain-ring"></div>
+          <!-- Synapses -->
+          <div class="synapse"></div>
+          <div class="synapse"></div>
+          <div class="synapse"></div>
+          <div class="synapse"></div>
+          <!-- Brain SVG -->
+          <svg class="brain-svg" viewBox="0 0 200 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <linearGradient id="bg1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5B4FFF"/>
+                <stop offset="100%" stop-color="#C45BFF"/>
+              </linearGradient>
+              <linearGradient id="bg2" x1="1" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#8F5BFF"/>
+                <stop offset="100%" stop-color="#5B4FFF"/>
+              </linearGradient>
+            </defs>
+            <!-- Left hemisphere -->
+            <path d="M100 20 C65 20 30 35 25 65 C18 100 28 135 55 150 C70 158 85 162 100 162" stroke="url(#bg1)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M100 20 C135 20 170 35 175 65 C182 100 172 135 145 150 C130 158 115 162 100 162" stroke="url(#bg2)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <!-- Folds left -->
+            <path d="M45 55 C55 48 68 50 75 58" stroke="#8F5BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M35 80 C48 73 62 76 68 85" stroke="#8F5BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M37 108 C50 102 65 105 70 115" stroke="#8F5BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M48 132 C62 126 76 130 80 140" stroke="#8F5BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <!-- Folds right -->
+            <path d="M155 55 C145 48 132 50 125 58" stroke="#C45BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M165 80 C152 73 138 76 132 85" stroke="#C45BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M163 108 C150 102 135 105 130 115" stroke="#C45BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <path d="M152 132 C138 126 124 130 120 140" stroke="#C45BFF" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.7"/>
+            <!-- Center line -->
+            <line x1="100" y1="22" x2="100" y2="160" stroke="rgba(143,91,255,0.4)" stroke-width="1" stroke-dasharray="4,4"/>
+            <!-- Glow dots -->
+            <circle cx="60" cy="80" r="4" fill="#5B4FFF" opacity="0.8"/>
+            <circle cx="140" cy="80" r="4" fill="#C45BFF" opacity="0.8"/>
+            <circle cx="75" cy="120" r="3" fill="#8F5BFF" opacity="0.9"/>
+            <circle cx="125" cy="120" r="3" fill="#8F5BFF" opacity="0.9"/>
+            <circle cx="100" cy="90" r="5" fill="url(#bg1)" opacity="0.9"/>
+          </svg>
+        </div>
       </div>
     </div>
-    <div class="sub"><div class="sub-title">الحرائك الدوائية</div>
-      <ul class="bullets">
-        <li>امتصاص فموي جيد، ذروة 2–8 ساعات</li>
-        <li>تأثير على المزاج بعد أسبوعين، أقصى تأثير 12 أسبوعاً</li>
-        <li><span class="pill">Fluoxetine</span>: عمر نصفي أطول، يستقلب إلى Norfluoxetine — ممكن جرعة أسبوعية</li>
-      </ul>
-    </div>
-    <div class="sub"><div class="sub-title">التأثيرات الجانبية</div>
-      <ul class="bullets">
-        <li>أعراض هضمية: غثيان، إقياء، إسهال (تتراجع بعد الأسبوع الأول)</li>
-        <li>خلل الوظيفة الجنسية (يستمر طوال المعالجة)</li>
-        <li>زيادة الوزن – خاصة <span class="pill">Paroxetine</span></li>
-        <li>أرق، أعراض سحب بعد 1–2 أسبوع من الإيقاف</li>
-      </ul>
-      <div class="notice notice-warn"><span class="notice-icon">⚠️</span>تستعمل بحذر شديد عند الأطفال – استعداد أكبر للانتحار</div>
-    </div>
-    <div class="sub"><div class="sub-title">التداخلات الدوائية</div>
-      <ul class="bullets">
-        <li><span class="pill">Fluoxetine</span> و<span class="pill">Paroxetine</span>: تثبطان CYP2D6 ← ترفعان تراكيز TCAs وSNRIs</li>
-        <li><span class="pill">Fluvoxamine</span>: تثبط CYP3A4 ← ترفع تراكيز Diltiazem وغيره</li>
-      </ul>
-      <div class="notice notice-danger"><span class="notice-icon">🚫</span>مع MAOIs: خطر متلازمة السيروتونين (حمى + رعشة + تشنجات)</div>
-      <div class="notice notice-info"><span class="notice-icon">ℹ️</span>SSRIs فئة C للحمل – ما عدا Paroxetine (فئة D)</div>
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- SNRIs -->
-<div class="drug-card" id="snri" data-tags="antidep serotonin">
-  <div class="drug-header h-snri" onclick="toggleCard(this)">
-    <h3>مثبطات إعادة قبط السيروتونين والنورابينفرين</h3>
-    <span class="drug-en">SNRIs</span>
-    <div class="drug-list">Venlafaxine • Desvenlafaxine • Duloxetine • Milnacipran • Reboxetine</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="sub"><div class="sub-title">آلية العمل</div>
-      <ul class="bullets">
-        <li>تثبط <span class="pill">SERT</span> + <span class="pill">NET</span> ← ترفع السيروتونين والنورابينفرين</li>
-        <li>لا تؤثر على H1، AchM، ألفا</li>
-      </ul>
-    </div>
-    <div class="sub"><div class="sub-title">خصائص كل دواء</div>
-      <table class="comp-table">
-        <thead><tr><th>الدواء</th><th>الخصائص</th></tr></thead>
-        <tbody>
-          <tr><td class="en-cell">Venlafaxine</td><td>يستقلب بـ CYP2D6 إلى Desvenlafaxine. للاكتئاب، الألم العصبي، القلق الاجتماعي</td></tr>
-          <tr><td class="en-cell">Duloxetine</td><td>ت½ = 12 ساعة. CYP2D6 + CYP1A2. احتراس في الفشل الكلوي</td></tr>
-          <tr><td class="en-cell">Reboxetine</td><td>حاصر انتقائي للنورابينفرين (NE فقط)</td></tr>
-          <tr><td class="en-cell">Milnacipran</td><td>لا يتأثر استقلابه بـ CYP</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="sub"><div class="sub-title">التأثيرات الجانبية والتحذيرات</div>
-      <ul class="bullets">
-        <li>مشابهة لـ SSRIs + ارتفاع ضغط الدم، أرق، قلق، هيجان</li>
-        <li>أعراض سحب مشابهة لـ SSRIs</li>
-      </ul>
-      <div class="notice notice-danger"><span class="notice-icon">🚫</span>ممنوعة مع MAOIs – خطر متلازمة السيروتونين</div>
-      <div class="notice notice-danger"><span class="notice-icon">🚫</span>Duloxetine لا تُعطى مع TCAs</div>
-    </div>
-  </div>
-</div>
-
-<!-- TCAs -->
-<div class="drug-card" id="tca" data-tags="antidep serotonin danger">
-  <div class="drug-header h-tca" onclick="toggleCard(this)">
-    <h3>مضادات الاكتئاب ثلاثية الحلقة</h3>
-    <span class="drug-en">TCAs</span>
-    <div class="drug-list">Amitriptyline • Clomipramine • Desipramine • Doxepin • Imipramine • Nortriptyline • Protriptyline • Trimipramine</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="sub"><div class="sub-title">آلية العمل</div>
-      <ul class="bullets">
-        <li>تثبط إعادة قبط <span class="pill">SERT</span> + <span class="pill">NET</span></li>
-        <li>تحصر: السيروتونينية، ألفا الأدرينالية، الموسكارينية (AchM)، الهيستامينية (H1)</li>
-      </ul>
-    </div>
-    <div class="sub"><div class="sub-title">خصائص فردية</div>
-      <div class="info-grid">
-        <div class="ig-label">Clomipramine</div><div class="ig-value">ألفة عالية لـ SERT ← خط ثانٍ في OCD (بعد SSRIs)</div>
-        <div class="ig-label">Desipramine / Nortriptyline</div><div class="ig-value">ألفة عالية لنواقل النورابينفرين</div>
-        <div class="ig-label">Imipramine</div><div class="ig-value">علاج السلس البولي عند الأطفال > 6 سنوات (بحذر – سمية قلبية)</div>
-        <div class="ig-label">Doxepin</div><div class="ig-value">مُركِّن للأرق وعلاج الحكة (مضاد هيستامين)</div>
-        <div class="ig-label">Amitriptyline</div><div class="ig-value">وقاية من صداع الشقيقة</div>
+  <!-- STATS -->
+  <section id="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="reveal">
+          <span class="stat-num">1%</span>
+          <span class="stat-label">من سكان العالم مصابون بها</span>
+        </div>
+        <div class="reveal">
+          <span class="stat-num">3×</span>
+          <span class="stat-label">أكثر شيوعاً عند الذكور</span>
+        </div>
+        <div class="reveal">
+          <span class="stat-num">2-15</span>
+          <span class="stat-label">سنة — عمر بدء الأعراض غالباً</span>
+        </div>
+        <div class="reveal">
+          <span class="stat-num">90%</span>
+          <span class="stat-label">تتحسّن الأعراض مع تقدم العمر</span>
+        </div>
       </div>
     </div>
-    <div class="sub"><div class="sub-title">التأثيرات الجانبية</div>
-      <ul class="bullets">
-        <li><strong>حصر AchM:</strong> تيبس رؤية، جفاف فم، احتباس بولي، إمساك، تفاقم الزرق</li>
-        <li><strong>حصر α1:</strong> هبوط ضغط انتصابي، دوار، تسرع قلبي انعكاسي</li>
-        <li><strong>حصر H1:</strong> نعاس، زيادة الوزن</li>
-        <li>فرط الجرعة: بطء توصيل قلبي، لانظميات مهددة للحياة</li>
-      </ul>
-      <div class="notice notice-danger"><span class="notice-icon">🚫</span>Imipramine: جرعة 5–6× العلاجية قد تكون قاتلة – احتياط شديد مع الانتحاريين</div>
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- 5-HT2 -->
-<div class="drug-card" id="ht2" data-tags="antidep serotonin">
-  <div class="drug-header h-ht2" onclick="toggleCard(this)">
-    <h3>مضادات مستقبلات السيروتونين</h3>
-    <span class="drug-en">5-HT2 Antagonists</span>
-    <div class="drug-list">Trazodone • Nefazodone</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="sub"><div class="sub-title">آلية العمل</div>
-      <ul class="bullets">
-        <li>تحصر <span class="pill">5-HT2A</span> وتقلل حساسية 5-HT1A قبل المشبكية ← تزيد تحرر السيروتونين</li>
-      </ul>
-    </div>
-    <div class="info-grid">
-      <div class="ig-label">Trazodone</div><div class="ig-value">مُثبط ضعيف SERT. للأرق بجرعة منخفضة. ت.ج: هضمية، هبوط ضغط انتصابي، هيجان</div>
-      <div class="ig-label">Nefazodone</div><div class="ig-value">SERT + NET (ضعيف) + H1 (معتدل). تراجع بسبب السمية الكبدية</div>
-    </div>
-  </div>
-</div>
-
-<!-- Atypical -->
-<div class="drug-card" id="atyp" data-tags="antidep">
-  <div class="drug-header h-atyp" onclick="toggleCard(this)">
-    <h3>مضادات الاكتئاب اللانمطية</h3>
-    <span class="drug-en">Atypical Antidepressants</span>
-    <div class="drug-list">Bupropion • Mirtazapine • Amoxapine • Maprotiline</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="drug-subname b-atyp">Bupropion</div>
-    <ul class="bullets">
-      <li>يثبط إعادة قبط NE ويزيد تحرر DA. يستقلب إلى <span class="pill">hydroxybupropion</span> (يثبط CYP2D6)</li>
-      <li>للاكتئاب، الإقلاع عن التدخين، السمنة. لا خلل جنسي، لا زيادة وزن</li>
-      <li>ت.ج: نزق، أرق، هيجان</li>
-    </ul>
-    <div class="notice notice-danger"><span class="notice-icon">🚫</span>ممنوع مع MAOIs – خطر سمية أدرينرجية</div>
-    <hr class="divider">
-    <div class="drug-subname b-atyp">Mirtazapine (رباعي الحلقة)</div>
-    <ul class="bullets">
-      <li>يحصر α2 قبل المشبكية ← يرفع السيروتونين والنورابينفرين. يحصر <span class="pill">5-HT2A</span> + <span class="pill">H1</span></li>
-      <li>ميزة: لا خلل جنسي. عيب: زيادة الوزن والنعاس</li>
-    </ul>
-    <hr class="divider">
-    <div class="drug-subname b-atyp">Amoxapine & Maprotiline</div>
-    <ul class="bullets">
-      <li>آلية TCA-like لكن أكثر نوعية. Amoxapine: يثبط D2 ← خصائص مضادة للذهان (خطر باركنسون)</li>
-    </ul>
-  </div>
-</div>
-
-<!-- Agomelatine -->
-<div class="drug-card" id="agom" data-tags="antidep serotonin">
-  <div class="drug-header h-agom" onclick="toggleCard(this)">
-    <h3>شادات مستقبلات الميلاتونين</h3>
-    <span class="drug-en">Melatonin Receptor Agonists – Agomelatine</span>
-    <div class="drug-list">Agomelatine</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <ul class="bullets">
-      <li>شاد <span class="pill">MT1</span> و<span class="pill">MT2</span> + مضاد <span class="pill">5-HT2C</span></li>
-      <li>لا يؤثر على إعادة القبط، لا تأثير على AchM، H1، DA، NA</li>
-      <li>فعالية مساوية لـ SSRIs وSNRIs – للقلق، OCD، الاكتئاب ثنائي القطب</li>
-      <li>لا اعتماد، لا انزعاج عند الإيقاف</li>
-    </ul>
-    <div class="notice notice-warn"><span class="notice-icon">⚠️</span>خطر سمية كبدية – مراقبة وظائف الكبد</div>
-  </div>
-</div>
-
-<!-- MAOIs -->
-<div class="drug-card" id="maoi" data-tags="antidep danger">
-  <div class="drug-header h-maoi" onclick="toggleCard(this)">
-    <h3>مثبطات المونوأمين أوكسيداز</h3>
-    <span class="drug-en">MAOIs</span>
-    <div class="drug-list">Moclobemide • Selegiline • Phenelzine • Tranylcypromine • Isocarboxazid</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="sub"><div class="sub-title">آلية العمل</div>
-      <ul class="bullets">
-        <li>تثبط MAO في الميتوكوندريا ← تزيد NE، DA، 5-HT في الفالق المشبكي</li>
-      </ul>
-    </div>
-    <div class="sub"><div class="sub-title">تصنيف</div>
-      <table class="comp-table">
-        <thead><tr><th>النوع</th><th>الدواء</th><th>الخصائص</th></tr></thead>
-        <tbody>
-          <tr><td>MAO-A عكوس</td><td class="en-cell">Moclobemide</td><td>انتقائي، عكوس، تداخلات غذائية أقل</td></tr>
-          <tr><td>MAO-B غير عكوس</td><td class="en-cell">Selegiline</td><td>انتقائي لـ MAO-B، عبر الجلد أو تحت اللسان</td></tr>
-          <tr><td>غير انتقائي غير عكوس</td><td class="en-cell">Phenelzine / Tranylcypromine</td><td>خطورة أعلى – تداخلات التيرامين</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="notice notice-danger"><span class="notice-icon">🚫</span>التيرامين (سمك مدخن، جبن قديم، خمر أحمر) ← ارتفاع ضغط دم صعقي</div>
-    <div class="notice notice-danger"><span class="notice-icon">🚫</span>ممنوع مع TCAs أو SSRIs أو SNRIs – متلازمة السيروتونين</div>
-    <div class="notice notice-danger"><span class="notice-icon">🚫</span>يجب إيقاف الأدوية الأخرى أسبوعين قبل بدء MAOIs</div>
-  </div>
-</div>
-
-<!-- New -->
-<div class="drug-card" id="new" data-tags="antidep gaba">
-  <div class="drug-header h-new" onclick="toggleCard(this)">
-    <h3>مضادات الاكتئاب الجديدة</h3>
-    <span class="drug-en">Novel Antidepressants</span>
-    <div class="drug-list">Esketamine • Brexanolone • Zuranolone • Dextromethorphan+Bupropion • Gepirone</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="drug-subname b-new">Esketamine (Spravato) – بخاخ الأنف</div>
-    <ul class="bullets">
-      <li>حاصر لا تنافسي لـ <span class="pill">NMDA</span> ← يزيد الغلوتامات، ينشط AMPA ← يحفز BDNF</li>
-      <li>الاكتئاب المقاوم للعلاج (FDA 2019) – تأثير سريع (ساعات)</li>
-    </ul>
-    <div class="notice notice-warn"><span class="notice-icon">⚠️</span>خطر التخدير، الانفصال، الإساءة – مراقبة ساعتين بعد الجرعة</div>
-    <hr class="divider">
-    <div class="drug-subname b-new">Brexanolone & Zuranolone – اكتئاب ما بعد الولادة</div>
-    <div class="info-grid">
-      <div class="ig-label">Brexanolone</div><div class="ig-value">FDA 2019 – شاد GABA-A – وريدي 60 ساعة في المستشفى</div>
-      <div class="ig-label">Zuranolone</div><div class="ig-value">FDA 2023 – فموي – 14 يوماً. لا يتطلب المستشفى</div>
-    </div>
-    <hr class="divider">
-    <div class="drug-subname b-new">Dextromethorphan + Bupropion (Auvelity – FDA 2022)</div>
-    <ul class="bullets">
-      <li>Dextromethorphan: يعدّل NMDA. Bupropion: يثبط NE ويرفع DA</li>
-    </ul>
-    <hr class="divider">
-    <div class="drug-subname b-new">Gepirone & St. John's Wort</div>
-    <ul class="bullets">
-      <li>Gepirone: شاد كلي 5-HT1A قبل المشبكية ← يزيد السيروتونين على المدى الطويل</li>
-      <li>St. John's Wort: hyperforin وhypericin ← مثبطات ضعيفة لإعادة القبط. للاكتئاب الخفيف</li>
-    </ul>
-  </div>
-</div>
-
-<!-- ═══════════ SECTION 2: MOOD STABILIZERS ═══════════ -->
-<div class="section-title" id="mood"><span class="num">٢</span>أدوية تثبيت المزاج — Mood Stabilizers</div>
-<div class="drug-card" data-tags="mood danger">
-  <div class="drug-header h-mood" onclick="toggleCard(this)">
-    <h3>الليثيوم</h3><span class="drug-en">Lithium Salts</span>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <ul class="bullets">
-      <li>شاردة أحادية التكافؤ تحاكي الصوديوم – تثبط الإشارات المتوسطة بالإينوزيتول-3-فوسفات</li>
-      <li>ت½ = 20 ساعة. لا استقلاب، يُطرح كلياً في البول. هامش علاجي ضيق جداً</li>
-    </ul>
-    <div class="sub" style="margin-top:14px"><div class="sub-title">التأثيرات السمية</div>
-      <div class="info-grid">
-        <div class="ig-label">خفيفة</div><div class="ig-value">صداع، جفاف، عطش، تعدد تبول، رعاش خفيف (Propranolol أو Atenolol)</div>
-        <div class="ig-label">عالية</div><div class="ig-value">تخليط عقلي، رعاش شديد، عسر كلام، اختلاجات، وفاة</div>
-        <div class="ig-label">طويل الأمد</div><div class="ig-value">قصور كلوي، زيادة الوزن، وذمة</div>
+  <!-- WHAT IS -->
+  <section id="about">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <span class="section-label reveal">ما هي المتلازمة</span>
+          <h2 class="reveal">فهم متلازمة<br/><span class="gradient-text">توريت</span></h2>
+          <p class="lead reveal">اضطراب عصبي نمائي يُعرّف بوجود "تيكات" حركية وصوتية لا إرادية، مستمرة ومتكررة.</p>
+          <div class="info-block reveal">
+            <p>
+              سُمّيت المتلازمة نسبةً إلى الطبيب الفرنسي <strong style="color:var(--ice)">جيل دو لا توريت</strong>
+              الذي وصفها عام 1885. وهي تنشأ نتيجة خلل في مسارات الدوبامين والسيروتونين
+              بين القشرة الجبهية والعقد القاعدية في الدماغ.
+            </p>
+          </div>
+          <br/>
+          <div class="info-block reveal">
+            <p>
+              التيكات هي حركات أو أصوات مفاجئة، سريعة، متكررة، غير إيقاعية، وغير إرادية.
+              يشعر بها المريض كـ"ضغط داخلي" يجب تفريغه، وقد يستطيع كبتها مؤقتاً
+              لكن هذا يستنزف طاقته.
+            </p>
+          </div>
+        </div>
+        <div>
+          <span class="section-label reveal">أنواع التيكات</span>
+          <div class="types-grid">
+            <div class="type-card reveal">
+              <span class="type-icon">🤚</span>
+              <h3>تيكات حركية بسيطة</h3>
+              <p>رمش العين، هزّ الرأس، إيماءات الكتف</p>
+            </div>
+            <div class="type-card reveal">
+              <span class="type-icon">🧍</span>
+              <h3>تيكات حركية معقّدة</h3>
+              <p>حركات منسّقة متعددة: القفز، اللمس، القرفصاء</p>
+            </div>
+            <div class="type-card reveal">
+              <span class="type-icon">🔊</span>
+              <h3>تيكات صوتية بسيطة</h3>
+              <p>الشخير، الكحّة، التصفير، أصوات الحلق</p>
+            </div>
+            <div class="type-card reveal">
+              <span class="type-icon">🗣️</span>
+              <h3>تيكات صوتية معقدة</h3>
+              <p>ترديد كلمات، تكرار عبارات، كوبرولاليا (نادرة)</p>
+            </div>
+            <div class="type-card reveal">
+              <span class="type-icon">📢</span>
+              <h3>إيكولاليا</h3>
+              <p>تكرار كلام الآخرين بشكل لا إرادي</p>
+            </div>
+            <div class="type-card reveal">
+              <span class="type-icon">🔄</span>
+              <h3>باليلاليا</h3>
+              <p>تكرار المريض لكلامه هو مرات عدة</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="notice notice-warn"><span class="notice-icon">⚠️</span>المدرات + NSAIDs تقلل تصفية الليثيوم 25%</div>
-    <div class="sub" style="margin-top:14px"><div class="sub-title">أدوية أخرى في تثبيت المزاج</div>
-      <ul class="bullets">
-        <li><strong>مضادات الصرع:</strong> <span class="pill">Valproic acid</span> • <span class="pill">Carbamazepine</span> • <span class="pill">Lamotrigine</span> • <span class="pill">Gabapentin</span> • <span class="pill">Topiramate</span></li>
-        <li><strong>مضادات الذهان:</strong> <span class="pill">Aripiprazole</span> • <span class="pill">Olanzapine</span> • <span class="pill">Quetiapine</span> • <span class="pill">Risperidone</span> • <span class="pill">Ziprasidone</span></li>
-      </ul>
-    </div>
-  </div>
-</div>
+  </section>
 
-<!-- ═══════════ SECTION 3: ANXIOLYTICS ═══════════ -->
-<div class="section-title" id="bzd"><span class="num">٣</span>أدوية القلق والمنومات — Anxiolytics &amp; Hypnotics</div>
-
-<div class="drug-card" data-tags="anxio gaba">
-  <div class="drug-header h-bzd" onclick="toggleCard(this)">
-    <h3>البنزوديازيبينات</h3><span class="drug-en">Benzodiazepines – BZDs</span>
-    <div class="drug-list">Alprazolam • Bromazepam • Chlordiazepoxide • Clonazepam • Diazepam • Estazolam • Flurazepam • Lorazepam • Midazolam • Nitrazepam • Oxazepam • Quazepam • Temazepam • Triazolam</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <div class="sub"><div class="sub-title">آلية العمل</div>
-      <ul class="bullets">
-        <li>منشطات ألوستيرية لـ <span class="pill">GABA-A</span> (موقع BZ بين α1 وγ2) ← يفتح قناة Cl⁻ ← فرط استقطاب ← تثبيط</li>
-      </ul>
-    </div>
-    <div class="sub"><div class="sub-title">التأثيرات</div>
-      <table class="comp-table">
-        <thead><tr><th>التأثير</th><th>التفاصيل</th></tr></thead>
-        <tbody>
-          <tr><td>مضاد القلق</td><td>Alprazolam لاضطرابات الهلع</td></tr>
-          <tr><td>تركين + فقدان ذاكرة مؤقت</td><td>مهدئ + Anterograde amnesia</td></tr>
-          <tr><td>منوم</td><td>↓ sleep onset، ↑ NREM، ↓ REM – Triazolam، Temazepam، Flurazepam</td></tr>
-          <tr><td>مضاد اختلاج</td><td>Lorazepam، Diazepam IV – Clonazepam للحالة الصرعية</td></tr>
-          <tr><td>مرخٍ للعضلات</td><td>بالجرعات العالية</td></tr>
-          <tr><td>تحمل واعتماد</td><td>التحمل في 1–2 أسبوع. سحب: قلق، هيجان، نوبات صرع</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="sub"><div class="sub-title">مدة التأثير</div>
-      <ul class="bullets">
-        <li><strong>طويلة (1–3 أيام):</strong> <span class="pill">Diazepam</span>، <span class="pill">Flurazepam</span></li>
-        <li><strong>قصيرة (3–6 ساعات):</strong> <span class="pill">Triazolam</span>، <span class="pill">Midazolam</span></li>
-      </ul>
-    </div>
-    <div class="notice notice-info"><span class="notice-icon">💊</span><strong>الترياق: Flumazenil</strong> – حاصر تنافسي على موقع BZ. تأثير قصير – قد يحتاج إعطاء مكرر</div>
-  </div>
-</div>
-
-<div class="drug-card" id="zdrug" data-tags="anxio gaba">
-  <div class="drug-header h-zdrug" onclick="toggleCard(this)">
-    <h3>عقاقير Z (Z-Drugs)</h3><span class="drug-en">Non-Benzodiazepine Hypnotics</span>
-    <div class="drug-list">Zolpidem • Zaleplon • Zopiclone • Eszopiclone</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <ul class="bullets">
-      <li>ترتبط بموقع BZ على GABA-A (بنية مختلفة) – فعالية مرخية وضدّ اختلاجية أقل من BZDs</li>
-    </ul>
-    <div class="info-grid" style="margin-top:12px">
-      <div class="ig-label">Zolpidem</div><div class="ig-value">فموي – جرعة واحدة. الترياق Flumazenil</div>
-      <div class="ig-label">Zaleplon</div><div class="ig-value">يمكن إعطاؤه مرتين في الليلة الواحدة</div>
-      <div class="ig-label">Zopiclone / Eszopiclone</div><div class="ig-value">تأثيرات مشابهة</div>
-    </div>
-  </div>
-</div>
-
-<div class="drug-card" id="mel" data-tags="anxio">
-  <div class="drug-header" style="background:#1B6CA8" onclick="toggleCard(this)">
-    <h3>شادات الميلاتونين</h3><span class="drug-en">Melatonin Receptor Agonists</span>
-    <div class="drug-list">Ramelteon • Melatonin</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <ul class="bullets">
-      <li><strong>Ramelteon:</strong> يرتبط بـ M1 وM2 في النواة فوق التصالبية – يحرض النوم. لا اعتماد، لا انزعاج</li>
-      <li><strong>Melatonin:</strong> علاج قصير الأمد للأرق – لا يسبب الاعتماد</li>
-    </ul>
-  </div>
-</div>
-
-<div class="drug-card" id="barb" data-tags="anxio gaba danger">
-  <div class="drug-header h-barb" onclick="toggleCard(this)">
-    <h3>الباربيتورات</h3><span class="drug-en">Barbiturates</span>
-    <div class="drug-list">Phenobarbital • Thiopental • Pentobarbital • Amobarbital • Secobarbital • Butabarbital</div>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <ul class="bullets">
-      <li>شادات ألوستيرية على GABA-A (موقع مختلف عن BZDs) ← تُبقي قناة Cl⁻ مفتوحة أطول</li>
-      <li>تحصر مستقبلات الغلوتامات. بالتراكيز العالية تحصر قنوات Na</li>
-    </ul>
-    <div class="info-grid" style="margin-top:12px">
-      <div class="ig-label">Phenobarbital</div><div class="ig-value">الصرع – خط أول</div>
-      <div class="ig-label">Thiopental</div><div class="ig-value">تحريض التخدير، إسعاف الصرع</div>
-      <div class="ig-label">Pentobarbital</div><div class="ig-value">الأرق، الصرع، الإسعاف</div>
-      <div class="ig-label">Amobarbital / Secobarbital / Butabarbital</div><div class="ig-value">الأرق، التركين قبل الجراحي</div>
-    </div>
-    <div class="notice notice-danger"><span class="notice-icon">🚫</span>هامش علاجي ضيق – خطر اعتماد وتثبيط تنفسي. لا يوجد ترياق!</div>
-  </div>
-</div>
-
-<div class="drug-card" id="orex" data-tags="anxio">
-  <div class="drug-header h-orex" onclick="toggleCard(this)">
-    <h3>حاصرات مستقبلات الأوركسين</h3><span class="drug-en">Orexin Receptor Antagonists – Suvorexant</span>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <ul class="bullets">
-      <li>مضاد قوي لـ <span class="pill">OX1R</span> و<span class="pill">OX2R</span> ← يمنع ارتباط الأوركسين A وB</li>
-      <li>الأوركسين يُبقي على اليقظة – تثبيطه يعزز النوم</li>
-      <li>لصعوبات بدء النوم والحفاظ عليه</li>
-    </ul>
-  </div>
-</div>
-
-<div class="drug-card" id="other" data-tags="anxio gaba">
-  <div class="drug-header h-other" onclick="toggleCard(this)">
-    <h3>أدوية القلق والمنومات الأخرى</h3><span class="drug-en">Other Anxiolytics &amp; Hypnotics</span>
-    <span class="collapse-icon">▾</span>
-  </div>
-  <div class="drug-body">
-    <table class="comp-table">
-      <thead><tr><th>الدواء</th><th>الآلية</th><th>الاستخدام</th><th>تحذيرات</th></tr></thead>
-      <tbody>
-        <tr><td class="en-cell">Buspirone</td><td>شاد جزئي 5-HT1A</td><td>القلق المعمم المزمن</td><td>لا يعمل فوراً (أسبوع+). لا اعتماد. آمن في الحمل</td></tr>
-        <tr><td class="en-cell">Chloral hydrate</td><td>—</td><td>منوم قديم</td><td>تأثيرات جانبية متعددة</td></tr>
-        <tr><td class="en-cell">Meprobamate</td><td>شاد GABA-A</td><td>حال للقلق</td><td>—</td></tr>
-        <tr><td class="en-cell">Etomidate</td><td>شاد GABA-A</td><td>مخدر وريدي في ICU</td><td>—</td></tr>
-        <tr><td class="en-cell">Clomethiazole</td><td>شاد GABA-A</td><td>مُركِّن، انسحاب الكحول</td><td>خطر وفاة مع الكحول</td></tr>
-        <tr><td class="en-cell">Propofol</td><td>شاد GABA-A</td><td>تحريض التخدير، ICU</td><td>—</td></tr>
-      </tbody>
-    </table>
-  </div>
-</div>
-
-<!-- ═══════════ SUMMARY ═══════════ -->
-<div class="section-title"><span class="num">٤</span>جداول الملخص السريع</div>
-
-<div class="summary-card" id="sum1">
-  <div class="summary-title">مقارنة أصناف مضادات الاكتئاب</div>
-  <table class="comp-table">
-    <thead><tr><th>الصنف</th><th>آلية العمل</th><th>الاستخدامات</th><th>أبرز التأثيرات الجانبية</th></tr></thead>
-    <tbody>
-      <tr><td><span class="tag tag-blue">SSRIs</span></td><td>تثبيط SERT انتقائياً</td><td>الاكتئاب، القلق، OCD، PTSD، PMDD، بوليميا</td><td>هضمية، خلل جنسي، أرق، زيادة وزن</td></tr>
-      <tr><td><span class="tag tag-blue">SNRIs</span></td><td>تثبيط SERT + NET</td><td>الاكتئاب، ألم عصبي، قلق اجتماعي</td><td>مثل SSRIs + ارتفاع ضغط الدم</td></tr>
-      <tr><td><span class="tag tag-green">TCAs</span></td><td>SERT+NET + حصر α، H1، AchM</td><td>الاكتئاب الشديد، ألم عصبي، OCD، صداع</td><td>جفاف فم، احتباس بولي، إمساك، لانظميات</td></tr>
-      <tr><td><span class="tag tag-purple">5-HT2 Ant.</span></td><td>حصر 5-HT2A + SERT ضعيف</td><td>الاكتئاب، الأرق (Trazodone)</td><td>هضمية، هبوط ضغط، سمية كبدية (Nefazodone)</td></tr>
-      <tr><td><span class="tag tag-amber">Bupropion</span></td><td>تثبيط NE + زيادة DA</td><td>الاكتئاب، الإقلاع عن التدخين، السمنة</td><td>نزق، أرق – بلا خلل جنسي، بلا زيادة وزن</td></tr>
-      <tr><td><span class="tag tag-amber">Mirtazapine</span></td><td>حصر α2 + 5-HT2A + H1</td><td>الاكتئاب مع اضطراب النوم</td><td>زيادة وزن، نعاس – بلا خلل جنسي</td></tr>
-      <tr><td><span class="tag tag-red">MAOIs</span></td><td>تثبيط MAO-A/B</td><td>الاكتئاب المقاوم، القلق الاجتماعي</td><td>تداخلات غذائية خطيرة، هبوط ضغط</td></tr>
-      <tr><td><span class="tag tag-blue">Agomelatine</span></td><td>شاد MT1/MT2 + حصر 5-HT2C</td><td>الاكتئاب، القلق، ثنائي القطب</td><td>سمية كبدية محتملة – قليل التأثيرات</td></tr>
-      <tr><td><span class="tag tag-green">Esketamine</span></td><td>حاصر NMDA</td><td>الاكتئاب المقاوم</td><td>تخدير، انفصال، خطر إساءة</td></tr>
-      <tr><td><span class="tag tag-green">Brexanolone</span></td><td>شاد GABA-A</td><td>اكتئاب ما بعد الولادة</td><td>دوخة، نعاس – يحتاج تسريب وريدي</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="summary-card" id="sum2">
-  <div class="summary-title">مقارنة أصناف أدوية القلق والمنومات</div>
-  <table class="comp-table">
-    <thead><tr><th>الصنف</th><th>الآلية</th><th>الاستخدام</th><th>تحذيرات</th></tr></thead>
-    <tbody>
-      <tr><td><span class="tag tag-blue">BZDs</span></td><td>شاد GABA-A (موقع BZ)</td><td>القلق الحاد، الأرق، قبل التخدير، الصرع</td><td>اعتماد، تحمل، خطر سحب</td></tr>
-      <tr><td><span class="tag tag-blue">Z-Drugs</span></td><td>شاد GABA-A (مشابه BZD)</td><td>الأرق بشكل رئيسي</td><td>تحمل في الاستخدام المطول</td></tr>
-      <tr><td><span class="tag tag-green">Ramelteon/Melatonin</span></td><td>شاد MT1/MT2</td><td>الأرق، اضطراب الإيقاع اليومي</td><td>لا اعتماد، لا انزعاج عند الإيقاف</td></tr>
-      <tr><td><span class="tag tag-green">Buspirone</span></td><td>شاد جزئي 5-HT1A</td><td>القلق المزمن المعمم</td><td>لا يعمل فوراً (أسبوع+)</td></tr>
-      <tr><td><span class="tag tag-red">Barbiturates</span></td><td>شاد GABA-A (موقع مختلف)</td><td>الصرع، التخدير</td><td>هامش ضيق، اعتماد، لا ترياق</td></tr>
-      <tr><td><span class="tag tag-purple">Suvorexant</span></td><td>حاصر OX1R/OX2R</td><td>الأرق</td><td>احتراس مع اضطراب QTc</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="summary-card" id="sum3">
-  <div class="summary-title">ملخص التداخلات الدوائية – CYP Interactions</div>
-  <table class="comp-table">
-    <thead><tr><th>الدواء</th><th>التأثير على CYP</th><th>التداخل المهم</th></tr></thead>
-    <tbody>
-      <tr><td class="en-cell">Fluoxetine & Paroxetine</td><td>تثبط CYP2D6</td><td>ترفع تراكيز TCAs وSNRIs</td></tr>
-      <tr><td class="en-cell">Fluvoxamine</td><td>تثبط CYP3A4</td><td>ترفع تراكيز Diltiazem وغيره</td></tr>
-      <tr><td class="en-cell">Venlafaxine</td><td>يستقلب بـ CYP2D6</td><td>تأثير متباين مع مثبطات CYP2D6</td></tr>
-      <tr><td class="en-cell">Duloxetine</td><td>يثبط CYP2D6 + CYP1A2</td><td>لا يُعطى مع TCAs</td></tr>
-      <tr><td class="en-cell">Bupropion</td><td>يثبط CYP2D6 (عبر hydroxybupropion)</td><td>يرفع تراكيز Desipramine</td></tr>
-      <tr><td class="en-cell">TCAs</td><td>تستقلب بـ CYP450</td><td>SSRIs ترفع تراكيزها – خطر سمية</td></tr>
-      <tr><td class="en-cell">MAOIs (غير عكوسة)</td><td>لا تستقلب بالسيتوكروم</td><td>تداخلات خطيرة مع التيرامين</td></tr>
-      <tr><td class="en-cell">BZDs</td><td>P450 ثم الغلوكورونيك</td><td>الكحول والمثبطات الجهازية تزيد تأثيرها</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<div style="text-align:center;color:#8099B0;font-size:12px;margin-top:32px;padding-top:16px;border-top:1px solid var(--border)">
-  د. سليمان دوبا | قسم الأدوية والسموم | جامعة المنارة | 2025
-</div>
-</main>
-</div>
-
-<!-- ── SCROLL TOP ── -->
-<button id="top-btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
-
-<!-- ══════════════════════════════════════════════
-     MODALS
-══════════════════════════════════════════════ -->
-
-<!-- FLASHCARDS MODAL -->
-<div class="modal-overlay" id="fc-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>🃏 بطاقات المراجعة</h2>
-      <button class="modal-close" onclick="closeModal('fc-modal')">✕</button>
-    </div>
-    <div class="modal-body" id="fc-body"></div>
-  </div>
-</div>
-
-<!-- QUIZ MODAL -->
-<div class="modal-overlay" id="quiz-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>📝 اختبر معلوماتك</h2>
-      <button class="modal-close" onclick="closeModal('quiz-modal')">✕</button>
-    </div>
-    <div class="modal-body" id="quiz-body"></div>
-  </div>
-</div>
-
-<!-- CHECKER MODAL -->
-<div class="modal-overlay" id="checker-modal">
-  <div class="modal">
-    <div class="modal-header">
-      <h2>⚡ فاحص التداخلات الدوائية</h2>
-      <button class="modal-close" onclick="closeModal('checker-modal')">✕</button>
-    </div>
-    <div class="modal-body">
-      <p style="margin-bottom:16px;color:#555;font-size:13px">اختر دواءين للتحقق من التداخل بينهما</p>
-      <div class="checker-grid">
-        <select class="checker-select" id="drug1">
-          <option value="">— الدواء الأول —</option>
-          <option value="ssri">SSRIs (Fluoxetine / Sertraline...)</option>
-          <option value="snri">SNRIs (Venlafaxine / Duloxetine...)</option>
-          <option value="tca">TCAs (Amitriptyline / Imipramine...)</option>
-          <option value="maoi">MAOIs (Phenelzine / Selegiline...)</option>
-          <option value="bupropion">Bupropion</option>
-          <option value="lithium">Lithium</option>
-          <option value="bzd">BZDs (Diazepam / Alprazolam...)</option>
-          <option value="barbiturate">Barbiturates</option>
-          <option value="alcohol">الكحول</option>
-          <option value="nsaid">NSAIDs</option>
-          <option value="agomelatine">Agomelatine</option>
-          <option value="esketamine">Esketamine</option>
-        </select>
-        <select class="checker-select" id="drug2">
-          <option value="">— الدواء الثاني —</option>
-          <option value="ssri">SSRIs (Fluoxetine / Sertraline...)</option>
-          <option value="snri">SNRIs (Venlafaxine / Duloxetine...)</option>
-          <option value="tca">TCAs (Amitriptyline / Imipramine...)</option>
-          <option value="maoi">MAOIs (Phenelzine / Selegiline...)</option>
-          <option value="bupropion">Bupropion</option>
-          <option value="lithium">Lithium</option>
-          <option value="bzd">BZDs (Diazepam / Alprazolam...)</option>
-          <option value="barbiturate">Barbiturates</option>
-          <option value="alcohol">الكحول</option>
-          <option value="nsaid">NSAIDs</option>
-          <option value="agomelatine">Agomelatine</option>
-          <option value="esketamine">Esketamine</option>
-        </select>
+  <!-- SYMPTOMS -->
+  <section id="symptoms">
+    <div class="container">
+      <span class="section-label reveal">الأعراض والمعايير</span>
+      <h2 class="reveal">كيف تُشخَّص<br/><span class="gradient-text">المتلازمة؟</span></h2>
+      <p class="lead reveal">
+        لا يوجد اختبار دم أو تصوير يحدد التشخيص، بل يعتمد الطبيب على معايير سريرية دقيقة.
+      </p>
+      <div class="symptom-list">
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>تيكات حركية متعددة</strong>
+            <span>وجود أكثر من تيك حركي واحد</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>تيك صوتي واحد على الأقل</strong>
+            <span>قد لا يكون بالضرورة في وقت واحد</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>الاستمرارية لأكثر من سنة</strong>
+            <span>مع انقطاعات لا تتجاوز 3 أشهر متواصلة</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>البدء قبل سن 18</strong>
+            <span>معظم الحالات تبدأ بين 5-10 سنوات</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>ليست ناجمة عن مادة أو مرض آخر</strong>
+            <span>الاستبعاد من أسباب أخرى ضروري</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>التذبذب والتغيّر</strong>
+            <span>التيكات تتغيّر طبيعتها وشدتها بمرور الوقت</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>الإحساس التحذيري</strong>
+            <span>شعور سابق للتيك كالضغط أو الحكة</span>
+          </div>
+        </div>
+        <div class="symptom-item reveal">
+          <div class="symptom-icon">✦</div>
+          <div class="symptom-text">
+            <strong>الحالات المصاحبة</strong>
+            <span>ADHD وOCD تصاحب المتلازمة في 86% من الحالات</span>
+          </div>
+        </div>
       </div>
-      <button class="checker-btn" onclick="checkInteraction()">🔍 فحص التداخل</button>
-      <div id="interaction-result" class="interaction-result"></div>
     </div>
-  </div>
+  </section>
+
+  <!-- MYTHS -->
+  <section id="myths">
+    <div class="container">
+      <span class="section-label reveal">حقيقة أم خرافة</span>
+      <h2 class="reveal">كسر <span class="gradient-text">المفاهيم الخاطئة</span></h2>
+      <p class="lead reveal">المتلازمة محاطة بكثير من المغالطات. دعنا نصحّحها بالعلم.</p>
+      <div class="myth-grid">
+        <div class="myth-card reveal">
+          <div class="myth-false">
+            <span class="myth-badge badge-false">✗ خرافة</span>
+            <p>متلازمة توريت تعني دائماً الشتائم والكلام الفاحش (كوبرولاليا)</p>
+          </div>
+          <div class="myth-true">
+            <span class="myth-badge badge-true">✓ حقيقة</span>
+            <p>الكوبرولاليا لا تظهر إلا في 10-15% فقط من الحالات، وهي من أندر أشكال التيكات الصوتية</p>
+          </div>
+        </div>
+        <div class="myth-card reveal">
+          <div class="myth-false">
+            <span class="myth-badge badge-false">✗ خرافة</span>
+            <p>المصابون بالمتلازمة لا يمكنهم التحكم في تيكاتهم أبداً</p>
+          </div>
+          <div class="myth-true">
+            <span class="myth-badge badge-true">✓ حقيقة</span>
+            <p>كثيرون يستطيعون كبت التيكات مؤقتاً بجهد، لكنه مجهد، وعادةً يشتد لاحقاً</p>
+          </div>
+        </div>
+        <div class="myth-card reveal">
+          <div class="myth-false">
+            <span class="myth-badge badge-false">✗ خرافة</span>
+            <p>المتلازمة تسبب إعاقة ذهنية وتؤثر على الذكاء</p>
+          </div>
+          <div class="myth-true">
+            <span class="myth-badge badge-true">✓ حقيقة</span>
+            <p>لا تؤثر المتلازمة على الذكاء البتة. كثير من المصابين يتميزون في مجالاتهم</p>
+          </div>
+        </div>
+        <div class="myth-card reveal">
+          <div class="myth-false">
+            <span class="myth-badge badge-false">✗ خرافة</span>
+            <p>التيكات ناجمة عن تربية سيئة أو ضغط نفسي</p>
+          </div>
+          <div class="myth-true">
+            <span class="myth-badge badge-true">✓ حقيقة</span>
+            <p>هي اضطراب عصبي وراثي بيولوجي، وإن كان التوتر قد يفاقم الأعراض</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TREATMENT -->
+  <section id="treatment">
+    <div class="container">
+      <span class="section-label reveal">الإدارة والعلاج</span>
+      <h2 class="reveal"><span class="gradient-text">خيارات</span> العلاج</h2>
+      <p class="lead reveal">
+        لا يوجد علاج شافٍ، لكن توجد استراتيجيات فعّالة للسيطرة على الأعراض وتحسين جودة الحياة.
+      </p>
+      <div class="treatment-steps">
+        <div class="step reveal">
+          <span class="step-num">01</span>
+          <div>
+            <h3>CBIT — العلاج السلوكي الشامل</h3>
+            <p>تدريب على استجابة تنافسية: تعليم المريض إجراء حركة معاكسة للتيك. من أفضل الخيارات غير الدوائية وفق الدراسات.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">02</span>
+          <div>
+            <h3>الدعم النفسي والتربوي</h3>
+            <p>جلسات مع معالج نفسي متخصص، دعم الأسرة والمدرسة، وخطط تعليمية مرنة تأخذ المتلازمة بعين الاعتبار.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">03</span>
+          <div>
+            <h3>العلاج الدوائي</h3>
+            <p>أدوية تعدّل الدوبامين (مثل هالوبيريدول، كلونيدين، فليوكسيتين) تُصرف بإشراف طبي لتقليل شدة التيكات.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">04</span>
+          <div>
+            <h3>تحفيز الدماغ العميق (DBS)</h3>
+            <p>للحالات الشديدة جداً، تُزرع أقطاب في مناطق محددة من الدماغ لتخفيف الأعراض الحادة المقاومة للعلاج.</p>
+          </div>
+        </div>
+        <div class="step reveal">
+          <span class="step-num">05</span>
+          <div>
+            <h3>تعديل نمط الحياة</h3>
+            <p>النوم الكافي، تقليل التوتر، الرياضة المنتظمة، وتجنب المنبهات — كلها تُخفف حدة التيكات بشكل ملحوظ.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAMOUS -->
+  <section id="famous">
+    <div class="container">
+      <span class="section-label reveal">من بيننا</span>
+      <h2 class="reveal">شخصيات عظيمة<br/><span class="gradient-text">عاشت مع توريت</span></h2>
+      <p class="lead reveal">المتلازمة لم تمنعهم من التألق، بل ربما أضافت لشخصياتهم عمقاً استثنائياً.</p>
+      <div class="famous-grid">
+        <div class="famous-card reveal">
+          <div class="famous-avatar">⚽</div>
+          <h3>تيم هوارد</h3>
+          <div class="role">حارس مرمى أمريكي دولي</div>
+          <p>أحد أبرز حراس المرمى في التاريخ، فاز بلقبات عديدة وخاض مئات المباريات الدولية.</p>
+        </div>
+        <div class="famous-card reveal">
+          <div class="famous-avatar">🎬</div>
+          <h3>دان أيكرويد</h3>
+          <div class="role">ممثل كوميدي — Ghostbusters</div>
+          <p>كاتب ومنتج ومؤدٍّ حائز على جوائز عالمية، وصف التيكات بأنها جزء من إبداعه.</p>
+        </div>
+        <div class="famous-card reveal">
+          <div class="famous-avatar">🎵</div>
+          <h3>بيلي إيليش</h3>
+          <div class="role">مغنية ومؤلفة موسيقية</div>
+          <p>أكشفت عن إصابتها بالمتلازمة، وقالت إن الموسيقى تساعدها في إدارة التيكات.</p>
+        </div>
+        <div class="famous-card reveal">
+          <div class="famous-avatar">📺</div>
+          <h3>مارك سامرز</h3>
+          <div class="role">مقدم برامج تلفزيوني</div>
+          <p>أحد أشهر مقدمي البرامج الأمريكية، تحدّث علناً عن تجربته مع المتلازمة لكسر الوصمة.</p>
+        </div>
+        <div class="famous-card reveal">
+          <div class="famous-avatar">🏀</div>
+          <h3>مهدي تورفيك</h3>
+          <div class="role">لاعب كرة سلة محترف</div>
+          <p>لاعب نرويجي محترف تحدّى كل التوقعات ووصل إلى أعلى المستويات في رياضته.</p>
+        </div>
+        <div class="famous-card reveal">
+          <div class="famous-avatar">🧠</div>
+          <h3>أنت القادم</h3>
+          <div class="role">قصتك تستحق أن تُروى</div>
+          <p>توريت لا يُعرّف أحداً. هويتك أكبر من أي تشخيص طبي.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section id="quote-section">
+    <div class="container">
+      <p class="big-quote reveal">
+        "توريت ليست من أنا، هي <em>جزء</em> مما أنا عليه —
+        وهناك فرق هائل بين الأمرين."
+      </p>
+      <p class="quote-source reveal">— تيم هوارد</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p class="footer-brand">Khder Khadour</p>
+      <p>محتوى توعوي بقلم خضر خضور — هذا الموقع لأغراض التوعية والتثقيف فقط</p>
+      <br/>
+      <p>للاستفسارات: <a href="mailto:info@khderkhadour.com">info@khderkhadour.com</a></p>
+    </div>
+  </footer>
+
 </div>
 
 <script>
-// ══════════ DATA ══════════
-const FLASHCARDS = [
-  {q:'ما هو الدواء الخط الأول في علاج OCD بعد SSRIs؟',a:'Clomipramine (TCA) – لألفته العالية لـ SERT',cat:'TCAs'},
-  {q:'ما آلية عمل SSRIs؟',a:'تثبط ناقل SERT بشكل انتقائي ← تزيد السيروتونين في الفالق المشبكي',cat:'SSRIs'},
-  {q:'ما الدواء المُفضَّل في علاج النهام العصبي (Bulimia)؟',a:'Fluoxetine (SSRI)',cat:'SSRIs'},
-  {q:'ما التداخل الخطير مع MAOIs؟',a:'التيرامين في الغذاء ← ارتفاع ضغط صعقي. وكل الأدوية السيروتونينية ← متلازمة السيروتونين',cat:'MAOIs'},
-  {q:'ما ترياق البنزوديازيبينات؟',a:'Flumazenil – حاصر تنافسي على موقع BZ في GABA-A',cat:'BZDs'},
-  {q:'ما الدواء المضاد للاكتئاب الذي يُستخدم للإقلاع عن التدخين؟',a:'Bupropion – يثبط NE ويزيد DA',cat:'لانمطية'},
-  {q:'ما آلية عمل الباربيتورات؟',a:'شادات ألوستيرية على GABA-A في موقع مختلف ← تُبقي قناة Cl⁻ مفتوحة أطول',cat:'باربيتورات'},
-  {q:'ما الدواء الجديد لاكتئاب ما بعد الولادة الفموي؟',a:'Zuranolone (FDA 2023) – شاد GABA-A – 14 يوماً فموياً',cat:'جديدة'},
-  {q:'ما التأثيرات الجانبية الرئيسية لـ TCAs؟',a:'حصر AchM (جفاف فم، احتباس بولي) + حصر α1 (هبوط ضغط انتصابي) + حصر H1 (نعاس)',cat:'TCAs'},
-  {q:'ما آلية عمل Agomelatine؟',a:'شاد MT1/MT2 + مضاد 5-HT2C – لا يؤثر على إعادة القبط',cat:'Agomelatine'},
-  {q:'أيّ BZD يمكن إعطاؤه مرتين في الليلة الواحدة؟',a:'Zaleplon (Z-Drug) – لقِصَر عمره النصفي',cat:'Z-Drugs'},
-  {q:'ما آلية عمل Suvorexant؟',a:'حاصر OX1R وOX2R ← يمنع ارتباط الأوركسين ← يعزز النوم',cat:'أوركسين'},
-  {q:'ما الدواء الذي يثبط CYP3A4 من SSRIs؟',a:'Fluvoxamine ← ترفع تراكيز Diltiazem وغيره',cat:'تداخلات'},
-  {q:'ما الليثيوم وكيف يُطرح؟',a:'شاردة أحادية التكافؤ. يُطرح كلياً عبر البول بدون استقلاب. ت½ = 20 ساعة',cat:'الليثيوم'},
-  {q:'ما آلية عمل Esketamine؟',a:'حاصر لا تنافسي لـ NMDA ← يزيد الغلوتامات وينشط AMPA ← يحفز BDNF',cat:'جديدة'},
-  {q:'أيّ مضادات الاكتئاب آمنة في الحمل من SSRIs؟',a:'كلها فئة C – ما عدا Paroxetine (فئة D الأخطر)',cat:'SSRIs'},
-  {q:'ما الدواء الوحيد الذي يرفع السيروتونين والنورابينفرين بتثبيط α2؟',a:'Mirtazapine – يحصر α2 قبل المشبكية',cat:'لانمطية'},
-  {q:'ما الفرق بين BZDs والباربيتورات في الخطورة؟',a:'الباربيتورات: هامش ضيق، لا ترياق، خطر تثبيط تنفسي. BZDs: ترياق Flumazenil متاح',cat:'مقارنة'},
-  {q:'ما استخدام Imipramine عند الأطفال؟',a:'علاج السلس البولي عند الأطفال > 6 سنوات (بحذر – سمية قلبية)',cat:'TCAs'},
-  {q:'ما الدواء الأول للاكتئاب المقاوم للعلاج الحاد؟',a:'Esketamine (Spravato) – تأثير خلال ساعات بدلاً من أسابيع',cat:'جديدة'},
-];
+  /* ===== EEG ANIMATION ===== */
+  const canvas = document.getElementById('eeg-canvas');
+  const ctx = canvas.getContext('2d');
+  let width, height, waves = [];
 
-const QUIZ = [
-  {q:'أيّ دواء يُستخدم في النهام العصبي بشكل انتقائي؟',opts:['Sertraline','Fluoxetine','Paroxetine','Fluvoxamine'],ans:1,exp:'Fluoxetine هي الـ SSRI الوحيدة المعتمدة رسمياً للبوليميا'},
-  {q:'ما ترياق البنزوديازيبينات؟',opts:['Naloxone','Flumazenil','Atropine','Physostigmine'],ans:1,exp:'Flumazenil حاصر تنافسي على موقع BZ في GABA-A'},
-  {q:'أيّ التالي لا يسبب زيادة الوزن ولا خللاً في الوظيفة الجنسية؟',opts:['Paroxetine','Mirtazapine','Bupropion','Amitriptyline'],ans:2,exp:'Bupropion ميزته الرئيسية: لا خلل جنسي ولا زيادة وزن'},
-  {q:'ما آلية عمل Suvorexant؟',opts:['شاد GABA-A','مثبط SERT','حاصر أوركسين OX1R/OX2R','شاد MT1/MT2'],ans:2,exp:'Suvorexant يحصر مستقبلات الأوركسين ← يمنع اليقظة ← يعزز النوم'},
-  {q:'أيّ MAOIs هو عكوس وانتقائي؟',opts:['Phenelzine','Tranylcypromine','Moclobemide','Isocarboxazid'],ans:2,exp:'Moclobemide عكوس وانتقائي لـ MAO-A – تداخلات غذائية أقل'},
-  {q:'ما الدواء المُوصى به لاكتئاب ما بعد الولادة عبر التسريب الوريدي؟',opts:['Zuranolone','Esketamine','Brexanolone','Agomelatine'],ans:2,exp:'Brexanolone (FDA 2019) هو الأول فموياً – يُعطى 60 ساعة في المستشفى'},
-  {q:'أيّ الأدوية التالية لها سمية كبدية كتأثير جانبي مهم؟',opts:['Fluoxetine','Agomelatine','Lithium','Alprazolam'],ans:1,exp:'Agomelatine: خطر سمية كبدية – يجب مراقبة وظائف الكبد'},
-  {q:'أيّ الأدوية التالية يُستخدم في السلس البولي عند الأطفال؟',opts:['Fluoxetine','Amitriptyline','Imipramine','Doxepin'],ans:2,exp:'Imipramine (TCA) معتمد لعلاج السلس البولي عند الأطفال > 6 سنوات'},
-  {q:'أيّ SSRIs تثبط CYP3A4 بشكل رئيسي؟',opts:['Fluoxetine','Paroxetine','Fluvoxamine','Sertraline'],ans:2,exp:'Fluvoxamine تثبط CYP3A4 ← ترفع تراكيز Diltiazem وغيره'},
-  {q:'ما الميزة الرئيسية لـ Mirtazapine مقارنة بـ SSRIs؟',opts:['لا تسبب النعاس','لا تسبب زيادة الوزن','لا تسبب خللاً في الوظيفة الجنسية','تعمل بسرعة أكبر'],ans:2,exp:'Mirtazapine ميزتها: لا خلل جنسي – لكن تسبب زيادة الوزن والنعاس'},
-  {q:'ما الباربيتورات المُستخدم كخط أول في الصرع؟',opts:['Thiopental','Pentobarbital','Phenobarbital','Amobarbital'],ans:2,exp:'Phenobarbital هو خط أول في علاج الصرع من الباربيتورات'},
-  {q:'ما آلية عمل Esketamine في الاكتئاب المقاوم؟',opts:['تثبيط SERT','حصر NMDA','شاد GABA-A','تثبيط MAO'],ans:1,exp:'Esketamine حاصر لا تنافسي لـ NMDA ← يزيد الغلوتامات وينشط AMPA ← يحفز BDNF'},
-  {q:'ما الدواء الذي يعكس تأثير Z-Drugs أيضاً؟',opts:['Naloxone','Physostigmine','Flumazenil','Atropine'],ans:2,exp:'Flumazenil يعكس تأثير BZDs والـ Z-Drugs لأنهما يرتبطان بنفس الموقع على GABA-A'},
-  {q:'كم يستغرق Buspirone لبدء تأثيره في القلق؟',opts:['ساعات','24–48 ساعة','أسبوع أو أكثر','فوري'],ans:2,exp:'Buspirone يحتاج أسبوعاً أو أكثر – لذلك لا يُستخدم للقلق الحاد'},
-  {q:'ما التداخل الخطير بين الليثيوم و NSAIDs؟',opts:['تسريع طرح الليثيوم','تثبيط استقلاب الليثيوم','تقليل تصفية الليثيوم 25%','تحريض CYP450'],ans:2,exp:'NSAIDs تقلل تصفية الليثيوم بمعدل 25% ← ترفع تراكيزه ← خطر السمية'},
-  {q:'أيّ الأدوية يُستخدم للأرق بجرعة منخفضة؟',opts:['Nefazodone','Trazodone','Clomipramine','Protriptyline'],ans:1,exp:'Trazodone بجرعة منخفضة: يحصر H1 ← يُستخدم للأرق'},
-  {q:'ما الفئة الحملية لـ Paroxetine؟',opts:['فئة A','فئة B','فئة C','فئة D'],ans:3,exp:'Paroxetine فئة D – الأخطر بين SSRIs على الجنين'},
-  {q:'ما الدواء الذي يُعطى وريدياً 60 ساعة لاكتئاب ما بعد الولادة؟',opts:['Zuranolone','Brexanolone','Agomelatine','Esketamine'],ans:1,exp:'Brexanolone (FDA 2019) أول دواء لاكتئاب ما بعد الولادة – وريدي 60 ساعة في المستشفى'},
-  {q:'ما الجهاز الرئيسي المستهدف في سمية Lithium العالية؟',opts:['الجهاز الهضمي','الجهاز العصبي المركزي','الكلى','القلب'],ans:1,exp:'السمية العالية: تخليط عقلي، رعاش شديد، عسر كلام، اختلاجات – تأثير على الـ CNS'},
-  {q:'أيّ الأدوية لا يسبب اعتماداً ولا انزعاجاً عند الإيقاف؟',opts:['Alprazolam','Zolpidem','Ramelteon','Phenobarbital'],ans:2,exp:'Ramelteon (شاد MT1/MT2): لا اعتماد، لا انزعاج عند الإيقاف'},
-  {q:'ما الفرق الرئيسي بين Phenelzine وMoclobemide؟',opts:['Moclobemide أقوى','Phenelzine عكوس','Moclobemide عكوس وانتقائي – تداخلات أقل','Phenelzine أكثر أماناً'],ans:2,exp:'Moclobemide: MAO-A عكوس انتقائي – تداخلات غذائية أقل بكثير من Phenelzine'},
-  {q:'ما آلية عمل البنزوديازيبينات؟',opts:['تثبيط SERT','شاد ألوستيري لـ GABA-A على موقع BZ','حصر NMDA','شاد MT1/MT2'],ans:1,exp:'BZDs ترتبط بموقع BZ بين α1 وγ2 في GABA-A ← تفتح قناة Cl⁻ ← تثبيط'},
-  {q:'أيّ الأدوية يثبط CYP2D6 من SNRIs؟',opts:['Venlafaxine','Milnacipran','Duloxetine','Reboxetine'],ans:2,exp:'Duloxetine يثبط CYP2D6 + CYP1A2 ← لا يُعطى مع TCAs'},
-  {q:'ما استخدام Doxepin (TCA) بجرعة منخفضة؟',opts:['OCD','السلس البولي','الأرق وعلاج الحكة','الشقيقة'],ans:2,exp:'Doxepin: مُركِّن للأرق وعلاج الحكة بسبب حصره للـ H1'},
-  {q:'كم تستغرق SSRIs لبدء تأثيرها على المزاج؟',opts:['24–48 ساعة','أسبوع واحد','أسبوعان','شهر كامل'],ans:2,exp:'SSRIs تحتاج أسبوعين لبدء التأثير على المزاج، وحتى 12 أسبوعاً للتأثير الأعظمي'},
-];
-
-const INTERACTIONS = {
-  'ssri+maoi':'danger|☠️ خطر قاتل|متلازمة السيروتونين: حمى مرتفعة، رعشة، تشنجات، وفاة. يجب إيقاف SSRIs أسبوعين قبل بدء MAOIs (5 أسابيع لـ Fluoxetine).',
-  'snri+maoi':'danger|☠️ خطر قاتل|متلازمة السيروتونين. ممنوع تماماً.',
-  'tca+maoi':'danger|☠️ خطر قاتل|متلازمة السيروتونين + سمية أدرينرجية. ممنوع تماماً.',
-  'bupropion+maoi':'danger|🚫 ممنوع|سمية أدرينرجية خطيرة. يجب فاصل أسبوعين.',
-  'ssri+tca':'warning|⚠️ تداخل مهم|Fluoxetine وParoxetine تثبطان CYP2D6 ← ترفعان تراكيز TCAs. خطر سمية قلبية.',
-  'snri+tca':'warning|⚠️ تداخل مهم|Duloxetine يثبط CYP2D6 ← يرفع تراكيز TCAs. ممنوع الجمع.',
-  'bzd+alcohol':'danger|🚫 خطير جداً|تثبيط CNS مضاعف ← تثبيط تنفسي قد يؤدي للوفاة.',
-  'barbiturate+alcohol':'danger|☠️ خطر قاتل|تثبيط تنفسي شديد ← وفاة. لا يوجد ترياق للباربيتورات.',
-  'bzd+barbiturate':'danger|🚫 خطر تنفسي|تثبيط CNS مضاعف. خطر تثبيط تنفسي شديد.',
-  'lithium+nsaid':'warning|⚠️ تداخل مهم|NSAIDs تقلل تصفية الليثيوم 25% ← ترفع تراكيزه ← خطر السمية.',
-  'agomelatine+maoi':'warning|⚠️ تحذير|Agomelatine مضاد 5-HT2C – الجمع مع MAOIs قد يزيد تأثيرات السيروتونين.',
-  'esketamine+bzd':'warning|⚠️ احتراس|كلاهما يثبط CNS – خطر الجمع: زيادة التخدير وتثبيط التنفس.',
-  'ssri+ssri':'warning|⚠️ لا داعي للجمع|لا فائدة من جمع SSRIs – يزيد الأعراض الجانبية بدون فائدة إضافية.',
-  'maoi+maoi':'danger|☠️ خطر قاتل|لا يُجمع بين MAOIs أبداً.',
-};
-
-function getInteractionKey(d1,d2){
-  const pairs=[[d1,d2],[d2,d1]];
-  for(const [a,b] of pairs){
-    const k=a+'+'+b;
-    if(INTERACTIONS[k]) return INTERACTIONS[k];
+  function resize() {
+    width = canvas.width = window.innerWidth;
+    height = canvas.height = window.innerHeight;
   }
-  return null;
-}
 
-// ══════════ SEARCH ══════════
-const searchData=[];
-document.querySelectorAll('.drug-card').forEach(card=>{
-  const name=card.querySelector('h3')?.textContent||'';
-  const en=card.querySelector('.drug-en')?.textContent||'';
-  const list=card.querySelector('.drug-list')?.textContent||'';
-  const body=card.querySelector('.drug-body')?.textContent||'';
-  searchData.push({name,en,list,body:body.slice(0,200),id:card.id||'',el:card});
-});
+  function createWave(y, color, speed, amplitude, freq) {
+    return { y, color, speed, amplitude, freq, offset: Math.random() * 1000 };
+  }
 
-const inp=document.getElementById('search-inp');
-const res=document.getElementById('search-results');
+  function initWaves() {
+    waves = [];
+    for (let i = 0; i < 6; i++) {
+      waves.push(createWave(
+        height * (0.15 + i * 0.14),
+        i % 2 === 0 ? '#5B4FFF' : '#8F5BFF',
+        0.4 + Math.random() * 0.6,
+        18 + Math.random() * 22,
+        0.012 + Math.random() * 0.008
+      ));
+    }
+  }
 
-inp.addEventListener('input',()=>{
-  const q=inp.value.trim().toLowerCase();
-  if(q.length<2){res.style.display='none';return}
-  const hits=searchData.filter(d=>
-    d.name.toLowerCase().includes(q)||d.en.toLowerCase().includes(q)||
-    d.list.toLowerCase().includes(q)||d.body.toLowerCase().includes(q)
-  ).slice(0,7);
-  if(!hits.length){res.style.display='none';return}
-  res.innerHTML=hits.map(h=>`
-    <div class="sr-item" onclick="jumpTo('${h.id}','${h.name}')">
-      <div class="sr-name">${highlight(h.name,q)}</div>
-      <div class="sr-cat">${h.en}</div>
-      <div class="sr-snippet">${highlight(h.body.slice(0,80),q)}...</div>
-    </div>`).join('');
-  res.style.display='block';
-});
+  let time = 0;
 
-function highlight(t,q){return t.replace(new RegExp(q,'gi'),m=>`<span class="sr-highlight">${m}</span>`)}
-function jumpTo(id,name){
-  res.style.display='none';inp.value=name;
-  if(id){document.getElementById(id)?.scrollIntoView({behavior:'smooth',block:'start'})}
-}
-document.addEventListener('click',e=>{if(!e.target.closest('#search-box'))res.style.display='none'});
+  function draw() {
+    ctx.clearRect(0, 0, width, height);
+    time += 0.012;
 
-// ══════════ PROGRESS BAR ══════════
-window.addEventListener('scroll',()=>{
-  const s=document.documentElement;
-  const p=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;
-  document.getElementById('progress-bar').style.width=p+'%';
-  document.getElementById('top-btn').classList.toggle('show',window.scrollY>300);
-});
+    waves.forEach(w => {
+      ctx.beginPath();
+      ctx.strokeStyle = w.color;
+      ctx.lineWidth = 1.2;
 
-// ══════════ NAV HIGHLIGHT ══════════
-const navLinks=document.querySelectorAll('nav a');
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting)navLinks.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+e.target.id));
+      for (let x = 0; x <= width; x += 2) {
+        const spike = Math.random() < 0.002 ? (Math.random() - 0.5) * 80 : 0;
+        const y = w.y
+          + Math.sin(x * w.freq + time * w.speed + w.offset) * w.amplitude
+          + spike;
+        x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+      }
+      ctx.stroke();
+    });
+
+    requestAnimationFrame(draw);
+  }
+
+  resize();
+  initWaves();
+  draw();
+  window.addEventListener('resize', () => { resize(); initWaves(); });
+
+  /* ===== SCROLL REVEAL ===== */
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12 });
+  reveals.forEach(r => io.observe(r));
+
+  /* ===== SMOOTH NAV ===== */
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      const target = document.querySelector(a.getAttribute('href'));
+      if (target) target.scrollIntoView({ behavior: 'smooth' });
+    });
   });
-},{rootMargin:'-15% 0px -70% 0px'});
-document.querySelectorAll('[id]').forEach(s=>obs.observe(s));
-
-// ══════════ COLLAPSE ══════════
-function toggleCard(hdr){hdr.closest('.drug-card').classList.toggle('collapsed')}
-function collapseAll(){
-  const cards=document.querySelectorAll('.drug-card');
-  const allCollapsed=[...cards].every(c=>c.classList.contains('collapsed'));
-  cards.forEach(c=>c.classList.toggle('collapsed',!allCollapsed));
-}
-
-// ══════════ FILTER ══════════
-function filterCards(f,btn){
-  document.querySelectorAll('.filter-chip').forEach(c=>c.classList.remove('active'));
-  btn.classList.add('active');
-  document.querySelectorAll('.drug-card').forEach(card=>{
-    const tags=(card.dataset.tags||'').split(' ');
-    card.classList.toggle('filtered-out',f!=='all'&&!tags.includes(f));
-  });
-}
-
-// ══════════ DARK MODE ══════════
-function toggleDark(){
-  document.body.classList.toggle('dark');
-  document.getElementById('dark-btn').textContent=document.body.classList.contains('dark')?'☀️ نهاري':'🌙 ليلي';
-}
-
-// ══════════ PARTICLES ══════════
-const pc=document.getElementById('particles');
-for(let i=0;i<20;i++){
-  const s=document.createElement('span');
-  s.style.cssText=`left:${Math.random()*100}%;animation-duration:${8+Math.random()*12}s;animation-delay:${Math.random()*10}s;opacity:${.2+Math.random()*.4}`;
-  pc.appendChild(s);
-}
-
-// ══════════ MODAL ══════════
-function openModal(id){document.getElementById(id).classList.add('open')}
-function closeModal(id){document.getElementById(id).classList.remove('open')}
-document.querySelectorAll('.modal-overlay').forEach(m=>{
-  m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('open')});
-});
-document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(m=>m.classList.remove('open'))});
-
-// ══════════ FLASHCARDS ══════════
-let fcIdx=0,fcCorrect=0,fcWrong=0,fcFlipped=false,fcShuffled=[];
-function openFlashcards(){
-  fcShuffled=[...FLASHCARDS].sort(()=>Math.random()-.5);
-  fcIdx=0;fcCorrect=0;fcWrong=0;
-  renderFC();openModal('fc-modal');
-}
-function renderFC(){
-  const body=document.getElementById('fc-body');
-  if(fcIdx>=fcShuffled.length){
-    const pct=Math.round(fcCorrect/fcShuffled.length*100);
-    const stars=pct>=90?'⭐⭐⭐':pct>=70?'⭐⭐':pct>=50?'⭐':'';
-    body.innerHTML=`<div id="fc-container"><div class="fc-score">
-      <div class="big-score">${pct}%</div>
-      <div class="fc-score-stars">${stars}</div>
-      <p>أصبت بـ <strong>${fcCorrect}</strong> من <strong>${fcShuffled.length}</strong></p>
-      <button class="fc-btn fc-btn-next" onclick="openFlashcards()" style="margin-top:14px">🔄 إعادة المراجعة</button>
-    </div></div>`;
-    document.getElementById('quiz-score-nav').textContent=pct+'%';
-    return;
-  }
-  const c=fcShuffled[fcIdx];
-  const prog=(fcIdx/fcShuffled.length*100).toFixed(0);
-  body.innerHTML=`<div id="fc-container">
-    <div class="fc-progress-bar"><div class="fc-progress-fill" style="width:${prog}%"></div></div>
-    <div class="fc-counter">${fcIdx+1} / ${fcShuffled.length} &nbsp;|&nbsp; ✅ ${fcCorrect} &nbsp;❌ ${fcWrong}</div>
-    <div class="fc-card" id="fc-card" onclick="flipFC()">
-      <div class="fc-inner">
-        <div class="fc-front"><div class="fc-label">${c.cat}</div><div class="fc-question">${c.q}</div><div class="fc-hint">اضغط للكشف</div></div>
-        <div class="fc-back"><div class="fc-label">الإجابة</div><div class="fc-answer">${c.a}</div></div>
-      </div>
-    </div>
-    <div class="fc-btns" id="fc-btns" style="display:none">
-      <button class="fc-btn fc-btn-wrong" onclick="fcAnswer(false)">❌ لم أعرف</button>
-      <button class="fc-btn fc-btn-right" onclick="fcAnswer(true)">✅ عرفت</button>
-    </div>
-  </div>`;
-  fcFlipped=false;
-}
-function flipFC(){
-  if(fcFlipped)return;
-  fcFlipped=true;
-  document.getElementById('fc-card').classList.add('flipped');
-  document.getElementById('fc-btns').style.display='flex';
-}
-function fcAnswer(correct){
-  if(correct)fcCorrect++;else fcWrong++;
-  fcIdx++;
-  renderFC();
-}
-
-// ══════════ QUIZ ══════════
-let qIdx=0,qScore=0,qAnswered=false,qShuffled=[];
-function openQuiz(){
-  qShuffled=[...QUIZ].sort(()=>Math.random()-.5).slice(0,15);
-  qIdx=0;qScore=0;
-  renderQ();openModal('quiz-modal');
-}
-function renderQ(){
-  const body=document.getElementById('quiz-body');
-  if(qIdx>=qShuffled.length){
-    const pct=Math.round(qScore/qShuffled.length*100);
-    const grade=pct>=90?'ممتاز 🏆':pct>=75?'جيد جداً 🌟':pct>=60?'جيد 👍':pct>=50?'مقبول 📚':'راجع مرة أخرى 💪';
-    body.innerHTML=`<div class="quiz-result">
-      <div class="big">${pct}%</div>
-      <div class="grade">${grade}</div>
-      <p>أصبت بـ <strong>${qScore}</strong> من <strong>${qShuffled.length}</strong> سؤالاً</p>
-      <button class="retry-btn" onclick="openQuiz()">🔄 اختبار جديد</button>
-    </div>`;
-    document.getElementById('quiz-score-nav').textContent=pct+'%';
-    return;
-  }
-  const q=qShuffled[qIdx];
-  body.innerHTML=`<div id="quiz-container">
-    <div class="quiz-progress">السؤال ${qIdx+1} من ${qShuffled.length} &nbsp;|&nbsp; النقاط: ${qScore}</div>
-    <div class="fc-progress-bar" style="margin:8px 0 16px"><div class="fc-progress-fill" style="width:${(qIdx/qShuffled.length*100).toFixed(0)}%"></div></div>
-    <div class="quiz-q">${q.q}</div>
-    <div class="quiz-options">${q.opts.map((o,i)=>`<button class="quiz-opt" onclick="pickQ(${i})">${o}</button>`).join('')}</div>
-    <div class="quiz-explain" id="quiz-exp">${q.exp}</div>
-    <div class="quiz-nav" id="quiz-nav" style="display:none">
-      <button class="quiz-nav-btn primary" onclick="nextQ()">التالي ←</button>
-    </div>
-  </div>`;
-  qAnswered=false;
-}
-function pickQ(i){
-  if(qAnswered)return;
-  qAnswered=true;
-  const q=qShuffled[qIdx];
-  const opts=document.querySelectorAll('.quiz-opt');
-  opts.forEach((o,idx)=>{
-    o.disabled=true;
-    if(idx===q.ans)o.classList.add('correct');
-    else if(idx===i&&i!==q.ans)o.classList.add('wrong');
-  });
-  if(i===q.ans)qScore++;
-  document.getElementById('quiz-exp').classList.add('show');
-  document.getElementById('quiz-nav').style.display='flex';
-}
-function nextQ(){qIdx++;renderQ();}
-
-// ══════════ DRUG CHECKER ══════════
-function checkInteraction(){
-  const d1=document.getElementById('drug1').value;
-  const d2=document.getElementById('drug2').value;
-  const el=document.getElementById('interaction-result');
-  if(!d1||!d2){el.style.display='none';return}
-  if(d1===d2&&d1!=='ssri'&&d1!=='maoi'){
-    el.className='interaction-result safe';el.style.display='block';
-    el.innerHTML='<div class="ir-icon">✅</div><div class="ir-title">نفس الصنف</div><div class="ir-text">اخترت نفس الدواء مرتين.</div>';
-    return;
-  }
-  const hit=getInteractionKey(d1,d2);
-  if(hit){
-    const[level,title,text]=hit.split('|');
-    el.className=`interaction-result ${level}`;el.style.display='block';
-    el.innerHTML=`<div class="ir-icon">${title.split(' ')[0]}</div><div class="ir-title">${title}</div><div class="ir-text">${text}</div>`;
-  } else {
-    el.className='interaction-result safe';el.style.display='block';
-    el.innerHTML='<div class="ir-icon">✅</div><div class="ir-title">لا تداخل موثق مهم</div><div class="ir-text">لم يُوجد تداخل خطير موثق بين هذين الدواءين في قاعدة البيانات. راجع المراجع السريرية دائماً.</div>';
-  }
-}
 </script>
 </body>
 </html>
